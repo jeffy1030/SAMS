@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|c:\\users\\jeffa\\onedrive\\desktop\\sams\\.gitattributes||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|solutionrelative:.gitattributes||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|c:\\users\\jeffa\\onedrive\\desktop\\sams\\views\\student\\studentpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|solutionrelative:views\\student\\studentpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|c:\\users\\jeffa\\onedrive\\desktop\\sams\\views\\teacher\\teacherpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|solutionrelative:views\\teacher\\teacherpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|c:\\users\\jeffa\\onedrive\\desktop\\sams\\views\\teacher\\addteacher.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|solutionrelative:views\\teacher\\addteacher.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|c:\\users\\jeffa\\onedrive\\desktop\\sams\\views\\student\\studentpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|solutionrelative:views\\student\\studentpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|c:\\users\\jeffa\\onedrive\\desktop\\sams\\views\\student\\addstudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -98,63 +102,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "HomePage.cshtml",
-              "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\Home\\HomePage.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\HomePage.cshtml",
-              "ToolTip": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\Home\\HomePage.cshtml",
-              "RelativeToolTip": "Views\\Home\\HomePage.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-28T16:22:38.034Z",
+              "DocumentIndex": 0,
+              "Title": ".gitattributes",
+              "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\.gitattributes",
+              "RelativeDocumentMoniker": ".gitattributes",
+              "ToolTip": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\.gitattributes",
+              "RelativeToolTip": ".gitattributes",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-01-28T16:51:49.355Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LoginPage.cshtml",
-              "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\Home\\LoginPage.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\LoginPage.cshtml",
-              "ToolTip": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\Home\\LoginPage.cshtml",
-              "RelativeToolTip": "Views\\Home\\LoginPage.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-28T16:23:31.341Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ReportsPage.cshtml",
-              "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\Reports\\ReportsPage.cshtml",
-              "RelativeDocumentMoniker": "Views\\Reports\\ReportsPage.cshtml",
-              "ToolTip": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\Reports\\ReportsPage.cshtml",
-              "RelativeToolTip": "Views\\Reports\\ReportsPage.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-28T16:27:45.651Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AddStudent.cshtml",
-              "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\Student\\AddStudent.cshtml",
-              "RelativeDocumentMoniker": "Views\\Student\\AddStudent.cshtml",
-              "ToolTip": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\Student\\AddStudent.cshtml",
-              "RelativeToolTip": "Views\\Student\\AddStudent.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-28T16:28:10.332Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "StudentPage.cshtml",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\Student\\StudentPage.cshtml",
               "RelativeDocumentMoniker": "Views\\Student\\StudentPage.cshtml",
@@ -167,20 +132,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "TeacherPage.cshtml",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\Teacher\\TeacherPage.cshtml",
               "RelativeDocumentMoniker": "Views\\Teacher\\TeacherPage.cshtml",
               "ToolTip": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\Teacher\\TeacherPage.cshtml",
               "RelativeToolTip": "Views\\Teacher\\TeacherPage.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-01-28T16:28:25.069Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "AddTeacher.cshtml",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\Teacher\\AddTeacher.cshtml",
               "RelativeDocumentMoniker": "Views\\Teacher\\AddTeacher.cshtml",
@@ -188,12 +153,75 @@
               "RelativeToolTip": "Views\\Teacher\\AddTeacher.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-28T16:28:34.944Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-28T16:28:34.944Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:4:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddStudent.cshtml",
+              "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\Student\\AddStudent.cshtml",
+              "RelativeDocumentMoniker": "Views\\Student\\AddStudent.cshtml",
+              "ToolTip": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\Student\\AddStudent.cshtml",
+              "RelativeToolTip": "Views\\Student\\AddStudent.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-28T16:28:10.332Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ReportsPage.cshtml",
+              "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\Reports\\ReportsPage.cshtml",
+              "RelativeDocumentMoniker": "Views\\Reports\\ReportsPage.cshtml",
+              "ToolTip": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\Reports\\ReportsPage.cshtml",
+              "RelativeToolTip": "Views\\Reports\\ReportsPage.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-28T16:27:45.651Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoginPage.cshtml",
+              "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\Home\\LoginPage.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\LoginPage.cshtml",
+              "ToolTip": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\Home\\LoginPage.cshtml",
+              "RelativeToolTip": "Views\\Home\\LoginPage.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-28T16:23:31.341Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "HomePage.cshtml",
+              "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\Home\\HomePage.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\HomePage.cshtml",
+              "ToolTip": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\Home\\HomePage.cshtml",
+              "RelativeToolTip": "Views\\Home\\HomePage.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-28T16:22:38.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "AttendancePage.cshtml",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\Attendance\\AttendancePage.cshtml",
               "RelativeDocumentMoniker": "Views\\Attendance\\AttendancePage.cshtml",
@@ -201,12 +229,11 @@
               "RelativeToolTip": "Views\\Attendance\\AttendancePage.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-28T16:27:09.745Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-28T16:27:09.745Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "AddAttendance.cshtml",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\Attendance\\AddAttendance.cshtml",
               "RelativeDocumentMoniker": "Views\\Attendance\\AddAttendance.cshtml",
@@ -214,12 +241,11 @@
               "RelativeToolTip": "Views\\Attendance\\AddAttendance.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-28T16:28:48.993Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-28T16:28:48.993Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
@@ -227,12 +253,11 @@
               "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-28T16:24:22.997Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-28T16:24:22.997Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
@@ -240,12 +265,11 @@
               "RelativeToolTip": "Views\\_ViewImports.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-28T16:32:35.771Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-28T16:32:35.771Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
@@ -253,12 +277,11 @@
               "RelativeToolTip": "Views\\_ViewStart.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-28T16:32:34.982Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-28T16:32:34.982Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "LogOutView.cshtml",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\Shared\\LogOutView.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\LogOutView.cshtml",
@@ -266,12 +289,11 @@
               "RelativeToolTip": "Views\\Shared\\LogOutView.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-28T16:32:15.776Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-28T16:32:15.776Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
@@ -279,12 +301,11 @@
               "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T16:22:48.913Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-28T16:22:48.913Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "AttendanceController.cs",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Controllers\\AttendanceController.cs",
               "RelativeDocumentMoniker": "Controllers\\AttendanceController.cs",
@@ -292,12 +313,11 @@
               "RelativeToolTip": "Controllers\\AttendanceController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T16:25:22.9Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-28T16:25:22.9Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "ReportsController.cs",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Controllers\\ReportsController.cs",
               "RelativeDocumentMoniker": "Controllers\\ReportsController.cs",
@@ -305,12 +325,11 @@
               "RelativeToolTip": "Controllers\\ReportsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T16:25:53.367Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-28T16:25:53.367Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "StudentController.cs",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Controllers\\StudentController.cs",
               "RelativeDocumentMoniker": "Controllers\\StudentController.cs",
@@ -318,12 +337,11 @@
               "RelativeToolTip": "Controllers\\StudentController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T16:25:37.838Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-28T16:25:37.838Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "TeacherController.cs",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Controllers\\TeacherController.cs",
               "RelativeDocumentMoniker": "Controllers\\TeacherController.cs",
@@ -331,12 +349,11 @@
               "RelativeToolTip": "Controllers\\TeacherController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T16:27:24.355Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-28T16:27:24.355Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -344,12 +361,11 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T16:22:22.352Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-28T16:22:22.352Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "AttendanceRecord.cs",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Models\\AttendanceRecord.cs",
               "RelativeDocumentMoniker": "Models\\AttendanceRecord.cs",
@@ -357,12 +373,11 @@
               "RelativeToolTip": "Models\\AttendanceRecord.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T16:15:48.096Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-28T16:15:48.096Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Attendance.cs",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Models\\Attendance.cs",
               "RelativeDocumentMoniker": "Models\\Attendance.cs",
@@ -370,12 +385,11 @@
               "RelativeToolTip": "Models\\Attendance.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T16:15:37.708Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-28T16:15:37.708Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "Users.cs",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Models\\Users.cs",
               "RelativeDocumentMoniker": "Models\\Users.cs",
@@ -383,8 +397,7 @@
               "RelativeToolTip": "Models\\Users.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T16:12:27.389Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-28T16:12:27.389Z"
             },
             {
               "$type": "Bookmark",
