@@ -4,3 +4,63 @@
 @{
     ViewData["Title"] = "Login";
 }
+
+@model SAMS.ViewModels.LoginViewModel
+
+<div class="d-flex justify-content-center align-items-center vh-100" style="background-color: #0b2a3d;">
+    <div class="bg-warning rounded shadow d-flex justify-content-center align-items-center"
+         style="width: 80vw; max-width: 1000px; min-height: 500px; padding: 60px;">
+
+        <div class="row w-100 h-100 g-4 align-items-center justify-content-center">
+
+            <!-- Login Form Column -->
+            <div class="col-md-6 d-flex justify-content-center">
+                <div class="p-4 rounded shadow flex-fill d-flex flex-column justify-content-center"
+                     style="background-color: #4a8c5f; min-height: 400px; max-width: 100%;">
+                    <h2 class="text-white fw-bold mb-4">Login</h2>
+
+                    <form asp-action="LoginPage" asp-controller="Home" method="post">
+                        <div class="mb-3">
+                            <input asp-for="User_ID" type="text" class="form-control" placeholder="ID NO">
+                            <span asp-validation-for="User_ID" class="text-danger"></span>
+                        </div>
+                        <div class="mb-4">
+                            <div class="input-group">
+                                <input asp-for="Pass" type="password" class="form-control" placeholder="PASSWORD">
+                                <span asp-validation-for="Pass" class="text-danger"></span>
+                                <span class="input-group-text bg-white border-0">
+                                    <i class="bi bi-eye text-muted"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-light px-5 py-2 fw-bold text-secondary rounded-1">LOGIN</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Logo Column -->
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                <div class="text-center">
+                    <img src="https://ik.imagekit.io/xc1p7nk5m/ChatGPT%20Image%20Jan%2029,%202026,%2012_27_17%20PM.png"
+                         alt="Hawkins High School Logo"
+                         style="max-height: 500px; width: auto;">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            background-color: #0b2a3d; /* Blue background */
+        }
+</style>
+
+
+
