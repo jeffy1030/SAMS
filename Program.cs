@@ -1,7 +1,16 @@
+using SAMS.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddHttpClient<MockApiService>(client =>
+{
+    client.BaseAddress = new Uri("https://697eed9cd1548030ab64bf4c.mockapi.io/");
+});
+
+//builder.Services.AddHttpClient
 
 var app = builder.Build();
 

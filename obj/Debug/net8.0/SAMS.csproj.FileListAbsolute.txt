@@ -229,3 +229,13 @@ C:\Users\jeffa\OneDrive\Desktop\SAMS\obj\Debug\net8.0\refint\SAMS.dll
 C:\Users\jeffa\OneDrive\Desktop\SAMS\obj\Debug\net8.0\SAMS.pdb
 C:\Users\jeffa\OneDrive\Desktop\SAMS\obj\Debug\net8.0\SAMS.genruntimeconfig.cache
 C:\Users\jeffa\OneDrive\Desktop\SAMS\obj\Debug\net8.0\ref\SAMS.dll
+C:\Users\jeffa\OneDrive\Desktop\SAMS\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
+C:\Users\jeffa\OneDrive\Desktop\SAMS\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\jeffa\OneDrive\Desktop\SAMS\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\jeffa\OneDrive\Desktop\SAMS\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.dll
+C:\Users\jeffa\OneDrive\Desktop\SAMS\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\jeffa\OneDrive\Desktop\SAMS\bin\Debug\net8.0\Microsoft.Extensions.Http.dll
+C:\Users\jeffa\OneDrive\Desktop\SAMS\bin\Debug\net8.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Users\jeffa\OneDrive\Desktop\SAMS\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\jeffa\OneDrive\Desktop\SAMS\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\jeffa\OneDrive\Desktop\SAMS\obj\Debug\net8.0\SAMS.sourcelink.json
