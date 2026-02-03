@@ -1,4 +1,5 @@
-﻿using SAMS.Models;
+﻿using Microsoft.AspNetCore.Mvc;
+using SAMS.Models;
 using System.Text;
 using System.Text.Json;
 
@@ -86,6 +87,7 @@ namespace SAMS.Services
                     .Where(u => u.Role == "Student")
                     .Max(u => u.User_ID);
             }
+
 
             // 3️⃣ Assign next ID
             student.User_ID = maxId + 1;
