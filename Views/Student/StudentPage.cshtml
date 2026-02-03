@@ -1,6 +1,87 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model SAMS.Models.Users
 @{
-    ViewData["Title"] = "Student Page";
+    ViewData["Title"] = "Add Student";
 }
+
+<div class="d-flex justify-content-center align-items-center vh-100" style="background-color: #0b2a3d;">
+    <div class="bg-warning rounded shadow d-flex justify-content-center align-items-center"
+         style="width: 80vw; max-width: 1000px; min-height: 550px; padding: 60px;">
+
+        <div class="w-100">
+
+            <!-- Header -->
+            <div class="d-flex align-items-center mb-4"
+            >
+                <a asp-action="StudentPage" asp-controller="Student" class="me-3 text-dark">
+                    <i class="bi bi-arrow-left-circle fs-3"></i>
+                </a>
+                <h2 class="fw-bold m-0 text-dark">ADD NEW STUDENT</h2>
+            </div>
+
+            <!-- Form Card -->
+            <div class="p-5 rounded shadow mx-auto"
+                 style="background-color: #3e7d4a; color:#ffffff max-width: 600px;">
+
+                <form asp-action="AddStudent" asp-controller="Student" method="post">
+
+                   @*  <div class="mb-3">
+                        <input asp-for="User_ID" class="form-control" placeholder="Student ID..." />
+                    </div> *@
+
+                    <div class="mb-3">
+                        <input asp-for="FName" class="form-control" placeholder="First Name..." />
+                    </div>
+
+                    <div class="mb-3">
+                        <input asp-for="MName" class="form-control" placeholder="Middle Name..." />
+                    </div>
+
+                    <div class="mb-3">
+                        <input asp-for="LName" class="form-control" placeholder="Last Name..." />
+                    </div>
+
+                    <div class="mb-3">
+                        <select asp-for="Gender" class="form-control">
+                            <option value="">Gender...</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-4">
+                        <input asp-for="Email" class="form-control" placeholder="Email..." />
+                    </div>
+
+                    <!-- Hidden role so every added record becomes a Student -->
+                    <input type="hidden" asp-for="Role" value="Student" />
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-light px-5 py-2 fw-bold text-secondary rounded-1">
+                            ADD STUDENT
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    body, html {
+        height: 100%;
+        margin: 0;
+        background-color: #0b2a3d;
+    }
+
+    .form-control {
+        border-radius: 8px;
+        padding: 10px 12px;
+        border: none;
+    }
+
+        .form-control:focus {
+            box-shadow: 0 0 0 0.2rem rgba(255,255,255,.25);
+            border-color: #ffffff;
+        }
+</style>
