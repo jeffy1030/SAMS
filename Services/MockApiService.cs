@@ -56,6 +56,8 @@ namespace SAMS.Services
 
             newTeacher.User_ID = maxId + 1;
 
+            newTeacher.Pass = Convert.ToString(newTeacher.User_ID);
+
             var json = JsonSerializer.Serialize(newTeacher, _jsonOptions);
             var content = new StringContent(json, Encoding.UTF8, "application/json");
 
@@ -87,6 +89,8 @@ namespace SAMS.Services
 
             // 3️⃣ Assign next ID
             student.User_ID = maxId + 1;
+
+            student.Pass = Convert.ToString(student.User_ID);
 
             var json = JsonSerializer.Serialize(student, _jsonOptions);
             var content = new StringContent(json, Encoding.UTF8, "application/json");
