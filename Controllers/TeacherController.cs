@@ -20,14 +20,14 @@ namespace SAMS.Controllers
 
         [HttpGet]
         public IActionResult AddTeacher()
-        {
-            var model = new Users();
-            return View(model);
+        {        
+            return View(new Users());
         }
 
         [HttpPost]
         public async Task<IActionResult> AddTeacher(Users model)
         {
+            
             ModelState.Remove("id");
             ModelState.Remove("User_ID");
             ModelState.Remove("Role");
@@ -40,11 +40,18 @@ namespace SAMS.Controllers
 
             if (createdTeacher == null)
             {
-                ModelState.AddModelError("", "Failed to create teacher");
-                return View(model);
+                TempData["ShowErrorModal"] = "true";
+            }
+            else
+            {
+                TempData["ShowSuccessModal"] = "true";
+                model.FName = string.Empty;
+                model.LName = string.Empty;
             }
 
-            return RedirectToAction("TeacherPage", "Teacher"); // or wherever you list teachers
+
+
+            return View(model);
         }
 
         //[HttpPost]
