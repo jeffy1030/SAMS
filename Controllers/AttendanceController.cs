@@ -7,6 +7,7 @@ namespace SAMS.Controllers
         public IActionResult AttendancePage()
         {
             return View();
+            
         }
 
         public IActionResult AddAttendance()

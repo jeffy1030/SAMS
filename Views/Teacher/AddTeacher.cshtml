@@ -4,3 +4,21 @@
 @{
     ViewData["Title"] = "Add Teacher";
 }
+
+@model SAMS.Models.Users
+
+<form asp-controller="Teacher" asp-action="AddTeacher" method="post">
+
+    <input asp-for="User_ID" type="hidden" disabled>
+    <input asp-for="id" type="hidden" disabled>
+    <input asp-for="Role" type="hidden" disabled>
+    <input asp-for="Pass" type="hidden" disabled>
+    <input asp-for="FName" type="text" placeholder="First Name">
+    <input asp-for="MName" type="text" placeholder="Middle Name">
+    <input asp-for="LName" type="text" placeholder="Last Name">
+    <input asp-for="Gender" type="text" placeholder="Gender">
+    <input asp-for="Email" type="text" placeholder="Email">
+
+    <button type="submit">Submit</button>
+
+</form>
