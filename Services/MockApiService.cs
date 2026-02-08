@@ -274,5 +274,19 @@ namespace SAMS.Services
             var attendances = await GetAttendancesAsync();
             return attendances.FirstOrDefault(a => a.id == attId);
         }
+
+        public async Task UpdateAttendanceAsync(string id, Attendance attendance)
+        {
+            var response = await _http.PutAsJsonAsync(
+                $"Attendance/{id}",  // use string id here
+                attendance,
+                new JsonSerializerOptions
+                {
+                    PropertyNamingPolicy = null,
+                    DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull
+                });
+
+            response.EnsureSuccessStatusCode();
+        }
     }
 }

@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|c:\\users\\jeffa\\onedrive\\desktop\\sams\\controllers\\attendancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|solutionrelative:controllers\\attendancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|c:\\users\\jeffa\\onedrive\\desktop\\sams\\models\\attendancerecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|solutionrelative:models\\attendancerecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|c:\\users\\jeffa\\onedrive\\desktop\\sams\\models\\attendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|solutionrelative:models\\attendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|c:\\users\\jeffa\\onedrive\\desktop\\sams\\views\\attendance\\editattendance.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|solutionrelative:views\\attendance\\editattendance.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|c:\\users\\jeffa\\onedrive\\desktop\\sams\\views\\attendance\\addattendance.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -23,12 +15,32 @@
       "RelativeMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|solutionrelative:views\\attendance\\attendancepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|c:\\users\\jeffa\\onedrive\\desktop\\sams\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|solutionrelative:models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|c:\\users\\jeffa\\onedrive\\desktop\\sams\\controllers\\attendancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|solutionrelative:controllers\\attendancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|c:\\users\\jeffa\\onedrive\\desktop\\sams\\services\\mockapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|solutionrelative:services\\mockapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|c:\\users\\jeffa\\onedrive\\desktop\\sams\\viewmodels\\studentattendanceitemvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|solutionrelative:viewmodels\\studentattendanceitemvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|c:\\users\\jeffa\\onedrive\\desktop\\sams\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|c:\\users\\jeffa\\onedrive\\desktop\\sams\\models\\attendancerecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|solutionrelative:models\\attendancerecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|c:\\users\\jeffa\\onedrive\\desktop\\sams\\models\\attendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|solutionrelative:models\\attendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|c:\\users\\jeffa\\onedrive\\desktop\\sams\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|solutionrelative:models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|c:\\users\\jeffa\\onedrive\\desktop\\sams\\viewmodels\\createattendancevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -37,14 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|c:\\users\\jeffa\\onedrive\\desktop\\sams\\viewmodels\\attendancedetailvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|solutionrelative:viewmodels\\attendancedetailvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|c:\\users\\jeffa\\onedrive\\desktop\\sams\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|c:\\users\\jeffa\\onedrive\\desktop\\sams\\services\\mockapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|solutionrelative:services\\mockapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|c:\\users\\jeffa\\onedrive\\desktop\\sams\\viewmodels\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -157,7 +161,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -165,11 +169,7 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:3:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+              "Name": "ST:4:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
               "$type": "Bookmark",
@@ -177,24 +177,28 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:4:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+              "Name": "ST:3:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CreateAttendanceVM.cs",
-              "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\ViewModels\\CreateAttendanceVM.cs",
-              "RelativeDocumentMoniker": "ViewModels\\CreateAttendanceVM.cs",
-              "ToolTip": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\ViewModels\\CreateAttendanceVM.cs",
-              "RelativeToolTip": "ViewModels\\CreateAttendanceVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-08T13:02:43.712Z",
+              "DocumentIndex": 0,
+              "Title": "EditAttendance.cshtml",
+              "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\Attendance\\EditAttendance.cshtml",
+              "RelativeDocumentMoniker": "Views\\Attendance\\EditAttendance.cshtml",
+              "ToolTip": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\Attendance\\EditAttendance.cshtml*",
+              "RelativeToolTip": "Views\\Attendance\\EditAttendance.cshtml*",
+              "ViewState": "AgIAACEAAAAAAAAAAAAcwDYAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-08T14:47:23.178Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "StudentAttendanceItemVM.cs",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\ViewModels\\StudentAttendanceItemVM.cs",
               "RelativeDocumentMoniker": "ViewModels\\StudentAttendanceItemVM.cs",
@@ -207,33 +211,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "AddAttendance.cshtml",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\Attendance\\AddAttendance.cshtml",
               "RelativeDocumentMoniker": "Views\\Attendance\\AddAttendance.cshtml",
-              "ToolTip": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\Attendance\\AddAttendance.cshtml",
-              "RelativeToolTip": "Views\\Attendance\\AddAttendance.cshtml",
-              "ViewState": "AgIAACIAAAAAAAAAAAAcwDYAAAA6AAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\Attendance\\AddAttendance.cshtml*",
+              "RelativeToolTip": "Views\\Attendance\\AddAttendance.cshtml*",
+              "ViewState": "AgIAACQAAAAAAAAAAAAcwEsAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-01-28T16:28:48.993Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "AttendancePage.cshtml",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\Attendance\\AttendancePage.cshtml",
               "RelativeDocumentMoniker": "Views\\Attendance\\AttendancePage.cshtml",
               "ToolTip": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\Attendance\\AttendancePage.cshtml",
               "RelativeToolTip": "Views\\Attendance\\AttendancePage.cshtml",
-              "ViewState": "AgIAADYAAAAAAAAAAAAmwDoAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAAmwEAAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-01-28T16:27:09.745Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAwwCkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T16:22:48.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AttendanceController.cs",
+              "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Controllers\\AttendanceController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AttendanceController.cs",
+              "ToolTip": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Controllers\\AttendanceController.cs",
+              "RelativeToolTip": "Controllers\\AttendanceController.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAgwGgAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T16:25:22.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MockApiService.cs",
+              "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Services\\MockApiService.cs",
+              "RelativeDocumentMoniker": "Services\\MockApiService.cs",
+              "ToolTip": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Services\\MockApiService.cs",
+              "RelativeToolTip": "Services\\MockApiService.cs",
+              "ViewState": "AgIAAPwAAAAAAAAAAAAAABABAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T12:40:42.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Attendance.cs",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Models\\Attendance.cs",
               "RelativeDocumentMoniker": "Models\\Attendance.cs",
@@ -246,7 +289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "AttendanceRecord.cs",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Models\\AttendanceRecord.cs",
               "RelativeDocumentMoniker": "Models\\AttendanceRecord.cs",
@@ -259,20 +302,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AttendanceController.cs",
-              "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Controllers\\AttendanceController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AttendanceController.cs",
-              "ToolTip": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Controllers\\AttendanceController.cs*",
-              "RelativeToolTip": "Controllers\\AttendanceController.cs*",
-              "ViewState": "AgIAABcAAAAAAAAAAAAUwB8AAAA4AAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "CreateAttendanceVM.cs",
+              "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\ViewModels\\CreateAttendanceVM.cs",
+              "RelativeDocumentMoniker": "ViewModels\\CreateAttendanceVM.cs",
+              "ToolTip": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\ViewModels\\CreateAttendanceVM.cs",
+              "RelativeToolTip": "ViewModels\\CreateAttendanceVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T16:25:22.9Z",
+              "WhenOpened": "2026-02-08T13:02:43.712Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "Users.cs",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Models\\Users.cs",
               "RelativeDocumentMoniker": "Models\\Users.cs",
@@ -285,7 +328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "AttendanceDetailVM.cs",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\ViewModels\\AttendanceDetailVM.cs",
               "RelativeDocumentMoniker": "ViewModels\\AttendanceDetailVM.cs",
@@ -298,33 +341,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwBsAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T16:22:48.913Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "MockApiService.cs",
-              "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Services\\MockApiService.cs",
-              "RelativeDocumentMoniker": "Services\\MockApiService.cs",
-              "ToolTip": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Services\\MockApiService.cs",
-              "RelativeToolTip": "Services\\MockApiService.cs",
-              "ViewState": "AgIAAPUAAAAAAAAAAAASwO4AAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-01T12:40:42.001Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "UserViewModel.cs",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\ViewModels\\UserViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\UserViewModel.cs",
@@ -337,7 +354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "LoginViewModel.cs",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\ViewModels\\LoginViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\LoginViewModel.cs",
@@ -350,7 +367,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
@@ -363,7 +380,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "TeacherController.cs",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Controllers\\TeacherController.cs",
               "RelativeDocumentMoniker": "Controllers\\TeacherController.cs",
@@ -376,7 +393,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "StudentController.cs",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Controllers\\StudentController.cs",
               "RelativeDocumentMoniker": "Controllers\\StudentController.cs",
@@ -389,7 +406,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "UnixDateTimeConverter.cs",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Services\\UnixDateTimeConverter.cs",
               "RelativeDocumentMoniker": "Services\\UnixDateTimeConverter.cs",
@@ -402,7 +419,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "ReportsController.cs",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Controllers\\ReportsController.cs",
               "RelativeDocumentMoniker": "Controllers\\ReportsController.cs",
@@ -415,7 +432,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "TeacherPage.cshtml",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\Teacher\\TeacherPage.cshtml",
               "RelativeDocumentMoniker": "Views\\Teacher\\TeacherPage.cshtml",
@@ -428,7 +445,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "EditStudent.cshtml",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\Student\\EditStudent.cshtml",
               "RelativeDocumentMoniker": "Views\\Student\\EditStudent.cshtml",
@@ -440,7 +457,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "EditTeacher.cshtml",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\Teacher\\EditTeacher.cshtml",
               "RelativeDocumentMoniker": "Views\\Teacher\\EditTeacher.cshtml",
@@ -452,7 +469,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "StudentPage.cshtml",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\Student\\StudentPage.cshtml",
               "RelativeDocumentMoniker": "Views\\Student\\StudentPage.cshtml",
@@ -464,7 +481,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "AddStudent.cshtml",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\Student\\AddStudent.cshtml",
               "RelativeDocumentMoniker": "Views\\Student\\AddStudent.cshtml",
@@ -476,7 +493,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "DeleteStudent.cshtml",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\Student\\DeleteStudent.cshtml",
               "RelativeDocumentMoniker": "Views\\Student\\DeleteStudent.cshtml",
@@ -488,7 +505,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "AddTeacher.cshtml",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\Teacher\\AddTeacher.cshtml",
               "RelativeDocumentMoniker": "Views\\Teacher\\AddTeacher.cshtml",
@@ -500,7 +517,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -512,7 +529,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
@@ -524,7 +541,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "LoginPage.cshtml",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\Home\\LoginPage.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\LoginPage.cshtml",
@@ -536,7 +553,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "LogOutView.cshtml",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\Shared\\LogOutView.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\LogOutView.cshtml",
@@ -548,7 +565,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "HomePage.cshtml",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\Home\\HomePage.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\HomePage.cshtml",
@@ -560,7 +577,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "Microsoft.PackageDependencyResolution.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.301\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
@@ -572,7 +589,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "Logo.png -  [English (United States)] - PNG [1536x1024, 32 bit, PNG]",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Images\\Logo.png",
               "RelativeDocumentMoniker": "Images\\Logo.png",
@@ -584,7 +601,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": ".gitattributes",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\.gitattributes",
               "RelativeDocumentMoniker": ".gitattributes",
@@ -596,7 +613,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "ReportsPage.cshtml",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\Reports\\ReportsPage.cshtml",
               "RelativeDocumentMoniker": "Views\\Reports\\ReportsPage.cshtml",
@@ -608,7 +625,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
@@ -620,7 +637,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
@@ -632,7 +649,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",

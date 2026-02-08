@@ -1,0 +1,77 @@
+﻿@model SAMS.ViewModels.CreateAttendanceVM
+
+<div style="background-color: #1a4d5c; min-height: 100vh; padding: 40px;">
+
+    <div style="background-color: #f4e04d; padding: 30px; border-radius: 8px 8px 0 0;
+                display: flex; justify-content: space-between; align-items: center;">
+        <div style="display: flex; align-items: center; gap: 15px;">
+            <a asp-action="AttendancePage" style="font-size: 24px; text-decoration: none; color: #333;">←</a>
+            <h1 style="margin: 0; font-size: 28px; font-weight: bold; color: #5a5a5a;">ATTENDANCE</h1>
+        </div>
+
+        <div style="border: 2px solid #5a5a5a; padding: 15px 20px;
+                    border-radius: 6px; background-color: #f4e04d;">
+            <div style="font-size: 12px; color: #5a5a5a; margin-bottom: 3px;">Taking attendance for</div>
+            <div style="font-size: 16px; font-weight: bold; color: #5a5a5a;">
+                @Model.Date.ToString("MMMM dd, yyyy")
+            </div>
+        </div>
+    </div>
+
+    <form asp-action="EditAttendance" method="post">
+        <div style="background-color: white; padding: 30px; margin-bottom: 20px;">
+            <div style="display: flex; gap: 20px; align-items: end;">
+
+                <div style="flex: 2;">
+                    <label>Attendance Name</label>
+                    <input asp-for="Name" placeholder="Enter attendance name"
+                           style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px;" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+
+                <div style="flex: 1;">
+                    <label>Date</label>
+                    <input asp-for="Date" type="date"
+                           style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px;" />
+                    <span asp-validation-for="Date" class="text-danger"></span>
+                </div>
+
+                <button type="submit" style="background-color: #5a9b7d; color: white; border: none; padding: 12px 24px; border-radius: 4px; cursor: pointer;">Save Attendance</button>
+            </div>
+        </div>
+
+        <table style="width: 100%; background-color: white; border-collapse: separate; border-spacing: 0 10px;">
+            <thead>
+                <tr style="background-color: #e8e8e8;">
+                    <th style="padding: 20px; width: 50%;">Student Name</th>
+                    <th style="padding: 20px;">Attendance Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (int i = 0; i < Model.Students.Count; i++)
+                {
+                    <tr style="background-color: #f0f0f0; border-radius: 6px;">
+                        <td style="padding: 15px; font-size: 16px; font-weight: 500;">
+                            @Model.Students[i].StudentName
+                        </td>
+                        <td style="padding: 15px;">
+                            <input type="hidden" asp-for="Students[i].User_ID" />
+                            <input type="hidden" name="id" value="@ViewBag.AttendanceId" />
+                            <div style="display: flex; gap: 30px; align-items: center;">
+                                <label>
+                                    <input type="radio" asp-for="Students[i].Status" value="Present" /> Present
+                                </label>
+                                <label>
+                                    <input type="radio" asp-for="Students[i].Status" value="Absent" /> Absent
+                                </label>
+                                <label>
+                                    <input type="radio" asp-for="Students[i].Status" value="Late" /> Late
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </form>
+</div>

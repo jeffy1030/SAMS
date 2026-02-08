@@ -65,7 +65,7 @@
                     @foreach (var attendance in Model)
                     {
                         <div style="background-color: #0b3c4d; padding: 20px; border-radius: 8px; min-height: 120px; cursor: pointer;">
-                            <a asp-controller="Attendance" asp-action="AttendanceDetail" asp-route-attId="@attendance.id" style="text-decoration: none; color: white;">
+                            <a asp-controller="Attendance" asp-action="EditAttendance" asp-route-id="@attendance.id" style="text-decoration: none; color: white;">
                                 <div style="font-weight: bold; font-size: 16px;">@attendance.Name</div>
                                 <div style="color: #a8d5e2; font-size: 13px;">@attendance.Date.ToString("MMMM dd, yyyy")</div>
                                 @* <div style="color: #9bbec9; font-size: 12px; font-style: italic;">Students: @attendance.Records?.Count ?? 0</div> *@
