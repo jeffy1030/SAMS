@@ -69,30 +69,66 @@ namespace SAMS.Controllers
             return RedirectToAction("AttendancePage");
         }
 
-        // GET: View attendance details
-        //public async Task<IActionResult> AttendanceDetails(int attId)
-        //{
-        //    var attendance = await _mockApiService.GetAttendanceByIdAsync(attId);
+        public async Task<IActionResult> EditAttendance(string id)
+        {
+            if (string.IsNullOrEmpty(id))
+                return NotFound();
 
-        //    if (attendance == null)
-        //        return NotFound();
+            // Fetch the attendance record by MockAPI id
+            var attendance = await _mockApiService.GetAttendanceByIdAsync(id);
+            if (attendance == null)
+                return NotFound();
 
-        //    // Map records to StudentAttendanceItemVM for display
-        //    var vm = new AttendanceDetailVM
-        //    {
-        //        AttID = attendance.Att,
-        //        Name = attendance.Name,
-        //        Date = attendance.Date,
-        //        Records = attendance.Records
-        //            .Select(r => new StudentAttendanceItemVM
-        //            {
-        //                UserID = r.UserID,
-        //                StudentName = "",  // optional: fetch name from Users if needed
-        //                Status = r.Status
-        //            }).ToList()
-        //    };
+            // Fetch all students
+            var users = await _mockApiService.GetUsersAsync();
+            var students = users
+                .Where(u => u.Role == "Student")
+                .Select(u =>
+                {
+                    var record = attendance.Records.FirstOrDefault(r => r.User_ID == u.User_ID);
+                    return new StudentAttendanceItemVM
+                    {
+                        User_ID = u.User_ID,
+                        StudentName = $"{u.LName}, {u.FName} {(string.IsNullOrEmpty(u.MName) ? "-" : u.MName.Substring(0, 1))}.",
+                        Status = record?.Status ?? "Absent"
+                    };
+                })
+                .ToList();
 
-        //    return View(vm);
-        //}
+            var vm = new CreateAttendanceVM
+            {
+                Name = attendance.Name,
+                Date = attendance.Date,
+                Students = students
+            };
+
+            ViewBag.AttendanceId = id; // pass id to the view for POST
+            return View(vm); // reuse AddAttendance view
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> EditAttendance(string id, CreateAttendanceVM vm)
+        {
+            if (string.IsNullOrEmpty(id))
+                return NotFound();
+
+            if (!ModelState.IsValid)
+                return View("AddAttendance", vm);
+
+            var attendance = new Attendance
+            {
+                Name = vm.Name,
+                Date = vm.Date,
+                Records = vm.Students.Select(s => new AttendanceRecord
+                {
+                    User_ID = s.User_ID,
+                    Status = s.Status
+                }).ToList()
+            };
+
+            await _mockApiService.UpdateAttendanceAsync(id, attendance);
+
+            return RedirectToAction("AttendancePage");
+        }
     }
 }
