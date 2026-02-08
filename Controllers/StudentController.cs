@@ -33,6 +33,7 @@ namespace SAMS.Controllers
             ModelState.Remove("User_ID");
             ModelState.Remove("Role");
             ModelState.Remove("Pass");
+            ModelState.Remove("IsActive");
 
             if (!ModelState.IsValid)
                 return View(model);

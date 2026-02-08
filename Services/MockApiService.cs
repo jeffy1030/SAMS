@@ -36,13 +36,17 @@ namespace SAMS.Services
         public async Task<Users?> LoginAsync(int userId, string password)
         {
             var users = await GetUsersAsync();
-            return users.FirstOrDefault(u => u.User_ID == userId && u.Pass == password);
+            return users.FirstOrDefault(u =>
+                u.User_ID == userId &&
+                u.Pass == password
+            );
         }
 
         //TEACHERS
         public async Task<Users?> CreateTeacherAsync(Users newTeacher)
         {
             newTeacher.Role = "Teacher";
+            newTeacher.IsActive = true;
 
             var users = await GetUsersAsync();
 
@@ -76,6 +80,7 @@ namespace SAMS.Services
         public async Task<Users?> CreateStudentAsync(Users student)
         {
             student.Role = "Student";
+            student.IsActive = true;
 
             var users = await GetUsersAsync();
 
@@ -107,5 +112,11 @@ namespace SAMS.Services
 
             return null;
         }
+
+        //public async Task<Users?> DeleteTeacher(Users teacher)
+        //{
+        //    teacher.
+        //    return null;
+        //}
     }
 }

@@ -53,6 +53,35 @@
     </div>
 </div>
 
+<div class="modal fade" id="validationModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-danger">Incomplete Form</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>This user is inactive. Cannot login</p>
+            </div>
+            <div class="modal-footer">
+                <a asp-action="LoginPage" asp-controller="Home" class="btn btn-success px-4 fw-semibold" data-bs-dismiss="modal">
+                    OK
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@if (TempData["ShowErrorModal"] != null)
+{
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var modal = new bootstrap.Modal(document.getElementById('validationModal'));
+            modal.show();
+        });
+    </script>
+}
+
 
 <style>
         body, html {

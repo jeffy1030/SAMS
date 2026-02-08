@@ -32,6 +32,7 @@ namespace SAMS.Controllers
             ModelState.Remove("User_ID");
             ModelState.Remove("Role");
             ModelState.Remove("Pass");
+            ModelState.Remove("IsActive");
 
             if (!ModelState.IsValid)
                 return View(model);
@@ -45,11 +46,7 @@ namespace SAMS.Controllers
             else
             {
                 TempData["ShowSuccessModal"] = "true";
-                model.FName = string.Empty;
-                model.LName = string.Empty;
             }
-
-
 
             return View(model);
         }
