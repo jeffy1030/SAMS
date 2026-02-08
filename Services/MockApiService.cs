@@ -1,7 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SAMS.Models;
+using SAMS.ViewModels;
+using System.Net.Http;
 using System.Text;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace SAMS.Services
 {
@@ -27,22 +30,42 @@ namespace SAMS.Services
             return JsonSerializer.Deserialize<List<Users>>(response);
         }
 
-        public async Task<List<Attendance>> GetAttendancesAsync()
+        //public async Task<List<Attendance>> GetAttendancesAsync()
+        //{
+        //    var response = await _http.GetStringAsync("Attendance");
+        //    return JsonSerializer.Deserialize<List<Attendance>>(response);
+        //}
+
+        public async Task<List<Users>> GetTeachersAsync()
         {
-            var response = await _http.GetStringAsync("Attendance");
-            return JsonSerializer.Deserialize<List<Attendance>>(response);
+            var users = await GetUsersAsync();
+            return users
+                .Where(u => u.Role == "Teacher")
+                .ToList();
+        }
+
+        public async Task<List<Users>> GetStudentAsync()
+        {
+            var users = await GetUsersAsync();
+            return users
+                .Where(u => u.Role == "Student")
+                .ToList();
         }
 
         public async Task<Users?> LoginAsync(int userId, string password)
         {
             var users = await GetUsersAsync();
-            return users.FirstOrDefault(u => u.User_ID == userId && u.Pass == password);
+            return users.FirstOrDefault(u =>
+                u.User_ID == userId &&
+                u.Pass == password
+            );
         }
 
         //TEACHERS
         public async Task<Users?> CreateTeacherAsync(Users newTeacher)
         {
             newTeacher.Role = "Teacher";
+            newTeacher.IsActive = true;
 
             var users = await GetUsersAsync();
 
@@ -76,6 +99,7 @@ namespace SAMS.Services
         public async Task<Users?> CreateStudentAsync(Users student)
         {
             student.Role = "Student";
+            student.IsActive = true;
 
             var users = await GetUsersAsync();
 
@@ -106,6 +130,149 @@ namespace SAMS.Services
             }
 
             return null;
+        }
+
+        public async Task<Users?> GetStudentByIdAsync(string id)
+        {
+            var users = await GetUsersAsync(); // existing method
+            return users.FirstOrDefault(u => u.id == id && u.Role == "Student");
+        }
+
+        public async Task<Users?> GetTeacherByIdAsync(string id)
+        {
+            var users = await GetUsersAsync(); // existing method
+            return users.FirstOrDefault(u => u.id == id && u.Role == "Teacher");
+        }
+
+        public async Task<bool> UpdateUsersAsync(Users updatedTeacher)
+        {
+            if (updatedTeacher == null)
+            {
+                Console.WriteLine("UpdateUsersAsync: updatedTeacher is null");
+                return false;
+            }
+
+            try
+            {
+                Console.WriteLine($"Updating teacher ID: {updatedTeacher.id}");
+
+                // Serialize with default options (uses JsonPropertyName attributes)
+                var jsonOptions = new JsonSerializerOptions
+                {
+                    PropertyNamingPolicy = null, // preserve the JsonPropertyName
+                    DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull
+                };
+
+                string payload = JsonSerializer.Serialize(updatedTeacher, jsonOptions);
+                Console.WriteLine($"Payload being sent:\n{payload}");
+
+                // Send PUT request to MockAPI
+                var content = new StringContent(payload, Encoding.UTF8, "application/json");
+                var response = await _http.PutAsync($"Users/{updatedTeacher.id}", content);
+
+                Console.WriteLine($"Response status: {response.StatusCode}");
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    var errorContent = await response.Content.ReadAsStringAsync();
+                    Console.WriteLine($"Error response: {errorContent}");
+                }
+
+                return response.IsSuccessStatusCode;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"UpdateTeacherAsync failed: {ex.Message}");
+                Console.WriteLine($"StackTrace: {ex.StackTrace}");
+                return false;
+            }
+        }
+
+        //public async Task<bool> UpdateTeacherAsync(Users updatedTeacher)
+        //{
+        //    if (updatedTeacher == null)
+        //    {
+        //        Console.WriteLine("UpdateTeacherAsync: updatedTeacher is null");
+        //        return false;
+        //    }
+
+        //    try
+        //    {
+        //        Console.WriteLine($"Updating teacher ID: {updatedTeacher.id}");
+
+        //        // Serialize with default options (uses JsonPropertyName attributes)
+        //        var jsonOptions = new JsonSerializerOptions
+        //        {
+        //            PropertyNamingPolicy = null, // preserve the JsonPropertyName
+        //            DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull
+        //        };
+
+        //        string payload = JsonSerializer.Serialize(updatedTeacher, jsonOptions);
+        //        Console.WriteLine($"Payload being sent:\n{payload}");
+
+        //        // Send PUT request to MockAPI
+        //        var content = new StringContent(payload, Encoding.UTF8, "application/json");
+        //        var response = await _http.PutAsync($"Users/{updatedTeacher.id}", content);
+
+        //        Console.WriteLine($"Response status: {response.StatusCode}");
+
+        //        if (!response.IsSuccessStatusCode)
+        //        {
+        //            var errorContent = await response.Content.ReadAsStringAsync();
+        //            Console.WriteLine($"Error response: {errorContent}");
+        //        }
+
+        //        return response.IsSuccessStatusCode;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Console.WriteLine($"UpdateTeacherAsync failed: {ex.Message}");
+        //        Console.WriteLine($"StackTrace: {ex.StackTrace}");
+        //        return false;
+        //    }
+        //}
+
+        //public async Task<Users?> DeleteTeacher(Users teacher)
+        //{
+        //    teacher.
+        //    return null;
+        //}
+
+        public async Task SaveAttendanceAsync(Attendance attendance)
+        {
+            var response = await _http.PostAsJsonAsync(
+                "Attendance",
+                attendance,
+                new JsonSerializerOptions
+                {
+                    PropertyNamingPolicy = null,
+                    DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull// IMPORTANT for JsonPropertyName
+                });
+
+            response.EnsureSuccessStatusCode();
+        }
+
+        // ============================
+        // GET ALL Attendance
+        // ============================
+        public async Task<List<Attendance>> GetAttendancesAsync()
+        {
+            return await _http.GetFromJsonAsync<List<Attendance>>(
+                "Attendance",
+                new JsonSerializerOptions
+                {
+                    PropertyNamingPolicy = null,
+                    DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull
+                }) ?? new List<Attendance>();
+        }
+
+        // ============================
+        // GET Attendance by AttID
+        // ============================
+        public async Task<Attendance?> GetAttendanceByIdAsync(string attId)
+        {
+            var attendances = await GetAttendancesAsync();
+            return attendances.FirstOrDefault(a => a.id == attId);
         }
     }
 }

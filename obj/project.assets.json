@@ -6111,23 +6111,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ACT-STUDENT\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\jeffa\\.nuget\\packages\\": {},
+    "D:\\MVS\\Vs2\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\SAMS.csproj",
+      "projectUniqueName": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\SAMS.csproj",
       "projectName": "SAMS",
-      "projectPath": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\SAMS.csproj",
-      "packagesPath": "C:\\Users\\ACT-STUDENT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\obj\\",
+      "projectPath": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\SAMS.csproj",
+      "packagesPath": "C:\\Users\\jeffa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jeffa\\OneDrive\\Desktop\\SAMS\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "D:\\MVS\\Vs2\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ACT-STUDENT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jeffa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -6153,7 +6153,7 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "all"
+        "auditMode": "direct"
       },
       "SdkAnalysisLevel": "9.0.300"
     },
@@ -6181,12 +6181,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.Net.Sdk.Compilers.Toolset",
-            "version": "[9.0.301, 9.0.301]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"

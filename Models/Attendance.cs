@@ -1,12 +1,20 @@
-﻿namespace SAMS.Models
+﻿using System.Text.Json.Serialization;
+
+namespace SAMS.Models
 {
     public class Attendance
     {
+        [JsonPropertyName("id")]
         public string? id { get; set; }
-        public int AttID { get; set; }
-        public string Name { get; set; }
+
+        [JsonPropertyName("Name")]
+        public string Name { get; set; } = "";
+
+        [JsonPropertyName("Date")]
         public DateTime Date { get; set; }
-        public List<AttendanceRecord> Records { get; set; }
+
+        [JsonPropertyName("Records")]
+        public List<AttendanceRecord> Records { get; set; } = new List<AttendanceRecord>();
     }
 }
     

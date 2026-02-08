@@ -27,21 +27,24 @@ namespace SAMS.Controllers
         [HttpPost]
         public async Task<IActionResult> LoginPage(LoginViewModel model)
         {
-
             if (!ModelState.IsValid)
                 return View(model);
 
-            var user = await _mockApiService.LoginAsync(model.User_ID, model.Pass);
+            var user = await _mockApiService.LoginAsync((int)model.User_ID, model.Pass);
 
             if (user == null)
             {
                 ModelState.AddModelError(string.Empty, "Invalid ID or password");
                 return View(model);
             }
-            else
+
+            if (!user.IsActive)
             {
-                return RedirectToAction("HomePage", "Home");
+                TempData["ShowErrorModal"] = "true";
+                return View(model);
             }
+
+            return RedirectToAction("HomePage", "Home");
         }
 
         public IActionResult HomePage()

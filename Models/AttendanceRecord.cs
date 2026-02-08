@@ -1,8 +1,13 @@
-﻿namespace SAMS.Models
+﻿using System.Text.Json.Serialization;
+
+namespace SAMS.Models
 {
     public class AttendanceRecord
     {
-        public int UserID { get; set; }
-        public string Status { get; set; }
+        [JsonPropertyName("User_ID")]  // IMPORTANT: must match your Users.User_ID
+        public int User_ID { get; set; }
+
+        [JsonPropertyName("Status")]
+        public string Status { get; set; } = "Absent";
     }
 }
