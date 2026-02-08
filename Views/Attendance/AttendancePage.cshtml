@@ -4,3 +4,87 @@
 @{
     ViewData["Title"] = "Attendance Dashboard";
 }
+
+@model List<SAMS.Models.Attendance>
+
+<div style="background-color: #1a4d5c; min-height: 100vh; display: flex;">
+
+    <!-- Left Sidebar -->
+    <div style="width: 270px; background-color: #3d6b4a; display: flex; flex-direction: column;">
+        <div style="background-color: #2d5a3a; padding: 30px; color: white;">
+            <h2 style="margin: 0; font-size: 24px; font-weight: bold;">ADMIN</h2>
+        </div>
+
+        <a asp-controller="Attendance" asp-action="AttendancePage" style="background-color: #5a9b7d; color: white; padding: 25px 30px; text-decoration: none; font-size: 14px; border-bottom: 1px solid #4a8a6a;">
+            ATTENDANCE
+        </a>
+
+        <a asp-controller="Student" asp-action="StudentPage" style="background-color: #5a9b7d; color: white; padding: 25px 30px; text-decoration: none; font-size: 14px; border-bottom: 1px solid #4a8a6a;">
+            STUDENT
+        </a>
+
+        <a asp-controller="Teacher" asp-action="TeacherPage" style="background-color: #5a9b7d; color: white; padding: 25px 30px; text-decoration: none; font-size: 14px; border-bottom: 1px solid #4a8a6a;">
+            TEACHER
+        </a>
+
+        <a asp-controller="Reports" asp-action="ReportsPage" style="background-color: #5a9b7d; color: white; padding: 25px 30px; text-decoration: none; font-size: 14px; border-bottom: 1px solid #4a8a6a;">
+            REPORTS
+        </a>
+
+        <a asp-controller="Account" asp-action="Logout" style="background-color: #5a9b7d; color: white; padding: 25px 30px; text-decoration: none; font-size: 14px; border-bottom: 1px solid #4a8a6a;">
+            LOG OUT
+        </a>
+    </div>
+
+    <!-- Main Content -->
+    <div style="flex: 1; padding: 40px;">
+        <div style="background-color: #f4e04d; padding: 40px; border-radius: 8px; min-height: 600px;">
+
+            <!-- Top Bar (Add Attendance) -->
+            <div style="display: flex; justify-content: flex-end; margin-bottom: 30px;">
+                <a asp-controller="Attendance" asp-action="AddAttendance"
+                   style="background-color: #5a9b7d; color: white; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 14px;">
+                    Add Attendance
+                </a>
+            </div>
+
+            <!-- Attendance List -->
+            @if (Model == null || !Model.Any())
+            {
+                <div style="text-align: center; margin-top: 120px; font-size: 18px; font-weight: 600; color: #1a4d5c;">
+                    No attendance recorded
+                </div>
+            }
+            else
+            {
+                <div style="
+                            display: grid;
+                            grid-template-columns: repeat(4, 1fr);
+                            gap: 20px;
+                        ">
+                    @foreach (var attendance in Model)
+                    {
+                        <div style="background-color: #0b3c4d; padding: 20px; border-radius: 8px; min-height: 120px; cursor: pointer;">
+                            <a asp-controller="Attendance" asp-action="AttendanceDetail" asp-route-attId="@attendance.id" style="text-decoration: none; color: white;">
+                                <div style="font-weight: bold; font-size: 16px;">@attendance.Name</div>
+                                <div style="color: #a8d5e2; font-size: 13px;">@attendance.Date.ToString("MMMM dd, yyyy")</div>
+                                @* <div style="color: #9bbec9; font-size: 12px; font-style: italic;">Students: @attendance.Records?.Count ?? 0</div> *@
+                            </a>
+                        </div>
+                    }
+                </div>
+            }
+
+        </div>
+    </div>
+</div>
+
+
+
+<style>
+    body, html {
+        height: 100%;
+        margin: 0;
+        background-color: #0b2a3d; /* Blue background */
+    }
+</style>

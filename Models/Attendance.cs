@@ -7,17 +7,14 @@ namespace SAMS.Models
         [JsonPropertyName("id")]
         public string? id { get; set; }
 
-        [JsonPropertyName("AttID")]
-        public int AttID { get; set; }
-
         [JsonPropertyName("Name")]
-        public string Name { get; set; }
+        public string Name { get; set; } = "";
 
         [JsonPropertyName("Date")]
         public DateTime Date { get; set; }
 
         [JsonPropertyName("Records")]
-        public List<AttendanceRecord> Records { get; set; }
+        public List<AttendanceRecord> Records { get; set; } = new List<AttendanceRecord>();
     }
 }
     

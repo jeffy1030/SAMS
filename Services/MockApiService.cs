@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SAMS.Models;
 using SAMS.ViewModels;
+using System.Net.Http;
 using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
@@ -29,11 +30,11 @@ namespace SAMS.Services
             return JsonSerializer.Deserialize<List<Users>>(response);
         }
 
-        public async Task<List<Attendance>> GetAttendancesAsync()
-        {
-            var response = await _http.GetStringAsync("Attendance");
-            return JsonSerializer.Deserialize<List<Attendance>>(response);
-        }
+        //public async Task<List<Attendance>> GetAttendancesAsync()
+        //{
+        //    var response = await _http.GetStringAsync("Attendance");
+        //    return JsonSerializer.Deserialize<List<Attendance>>(response);
+        //}
 
         public async Task<List<Users>> GetTeachersAsync()
         {
@@ -236,5 +237,42 @@ namespace SAMS.Services
         //    teacher.
         //    return null;
         //}
+
+        public async Task SaveAttendanceAsync(Attendance attendance)
+        {
+            var response = await _http.PostAsJsonAsync(
+                "Attendance",
+                attendance,
+                new JsonSerializerOptions
+                {
+                    PropertyNamingPolicy = null,
+                    DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull// IMPORTANT for JsonPropertyName
+                });
+
+            response.EnsureSuccessStatusCode();
+        }
+
+        // ============================
+        // GET ALL Attendance
+        // ============================
+        public async Task<List<Attendance>> GetAttendancesAsync()
+        {
+            return await _http.GetFromJsonAsync<List<Attendance>>(
+                "Attendance",
+                new JsonSerializerOptions
+                {
+                    PropertyNamingPolicy = null,
+                    DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull
+                }) ?? new List<Attendance>();
+        }
+
+        // ============================
+        // GET Attendance by AttID
+        // ============================
+        public async Task<Attendance?> GetAttendanceByIdAsync(string attId)
+        {
+            var attendances = await GetAttendancesAsync();
+            return attendances.FirstOrDefault(a => a.id == attId);
+        }
     }
 }

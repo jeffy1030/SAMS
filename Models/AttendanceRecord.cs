@@ -4,10 +4,10 @@ namespace SAMS.Models
 {
     public class AttendanceRecord
     {
-        [JsonPropertyName("UserID")]
-        public int UserID { get; set; }
+        [JsonPropertyName("User_ID")]  // IMPORTANT: must match your Users.User_ID
+        public int User_ID { get; set; }
 
         [JsonPropertyName("Status")]
-        public string Status { get; set; }
+        public string Status { get; set; } = "Absent";
     }
 }
