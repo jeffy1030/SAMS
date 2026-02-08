@@ -1,0 +1,36 @@
+﻿@model SAMS.Models.Users
+
+@{
+    ViewData["Title"] = "Delete Student";
+}
+
+<h2>Delete Student</h2>
+
+<div class="card mt-3">
+    <div class="card-header bg-danger text-white">
+        Confirm Delete
+    </div>
+    <div class="card-body">
+        <p>Are you sure you want to delete the following student?</p>
+
+        <dl class="row">
+            <dt class="col-sm-3">Full Name</dt>
+            <dd class="col-sm-9">@Model.FName @Model.MName @Model.LName</dd>
+
+            <dt class="col-sm-3">User ID</dt>
+            <dd class="col-sm-9">@Model.User_ID</dd>
+
+            <dt class="col-sm-3">Email</dt>
+            <dd class="col-sm-9">@Model.Email</dd>
+
+            <dt class="col-sm-3">Gender</dt>
+            <dd class="col-sm-9">@Model.Gender</dd>
+        </dl>
+
+        <form asp-action="DeleteStudent" method="post">
+            <input type="hidden" asp-for="id" />
+            <button type="submit" class="btn btn-danger">Confirm Delete</button>
+            <a asp-action="StudentPage" class="btn btn-secondary">Cancel</a>
+        </form>
+    </div>
+</div>

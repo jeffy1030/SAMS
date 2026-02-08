@@ -33,7 +33,7 @@
             <tr style="background-color:#2d5a6b; color:white; height:50px;">
                 <th style="padding:15px; text-align:left; font-size:18px;">Full Name</th>
                 <th style="padding:15px; text-align:left; font-size:14px;">ID Number</th>
-                <th style="padding:15px; text-align:center; font-size:14px;">Status</th>
+                @* <th style="padding:15px; text-align:center; font-size:14px;">Status</th> *@
                 <th style="padding:15px; text-align:center; font-size:14px;">Actions</th>
             </tr>
         </thead>
@@ -51,7 +51,7 @@
                         <td style="padding:15px; text-align:left;">@fullName</td>
                         <td style="padding:15px; text-align:left;"><b>@idDisp</b></td>
 
-                        <td style="padding:15px; text-align:center;">
+                      @*   <td style="padding:15px; text-align:center;">
                             @if (user.IsActive)
                             {
                                 <span style="color:#2e7d32; font-weight:bold;">Active</span>
@@ -60,7 +60,7 @@
                             {
                                 <span style="color:#c62828; font-weight:bold;">Inactive</span>
                             }
-                        </td>
+                        </td> *@
 
                         <td style="padding:15px; text-align:center;">
                             <!-- Edit Button -->

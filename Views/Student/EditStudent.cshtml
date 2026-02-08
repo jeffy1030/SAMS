@@ -7,9 +7,14 @@
 @model SAMS.Models.Users
 
 <form asp-controller="Student" asp-action="EditStudent" method="post">
+    @Html.AntiForgeryToken()
 
     <input asp-for="User_ID" type="hidden">
-  
+    <input asp-for="id" type="hidden">
+    <input asp-for="Role" type="hidden">
+    <input asp-for="Pass" type="hidden">
+    <input asp-for="IsActive" type="hidden">
+
     <input asp-for="FName" type="text" placeholder="First Name">
     <input asp-for="MName" type="text" placeholder="Middle Name">
     <input asp-for="LName" type="text" placeholder="Last Name">

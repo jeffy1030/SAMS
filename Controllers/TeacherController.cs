@@ -83,7 +83,7 @@ namespace SAMS.Controllers
                 return View(model);
 
             // Send the full object to MockAPI
-            var success = await _mockApiService.UpdateTeacherAsync(model); // pass full Users
+            var success = await _mockApiService.UpdateUsersAsync(model); // pass full Users
             if (!success)
             {
                 ModelState.AddModelError("", "Failed to update teacher.");

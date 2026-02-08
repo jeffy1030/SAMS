@@ -131,17 +131,23 @@ namespace SAMS.Services
             return null;
         }
 
+        public async Task<Users?> GetStudentByIdAsync(string id)
+        {
+            var users = await GetUsersAsync(); // existing method
+            return users.FirstOrDefault(u => u.id == id && u.Role == "Student");
+        }
+
         public async Task<Users?> GetTeacherByIdAsync(string id)
         {
             var users = await GetUsersAsync(); // existing method
             return users.FirstOrDefault(u => u.id == id && u.Role == "Teacher");
         }
 
-        public async Task<bool> UpdateTeacherAsync(Users updatedTeacher)
+        public async Task<bool> UpdateUsersAsync(Users updatedTeacher)
         {
             if (updatedTeacher == null)
             {
-                Console.WriteLine("UpdateTeacherAsync: updatedTeacher is null");
+                Console.WriteLine("UpdateUsersAsync: updatedTeacher is null");
                 return false;
             }
 
@@ -181,12 +187,49 @@ namespace SAMS.Services
             }
         }
 
+        //public async Task<bool> UpdateTeacherAsync(Users updatedTeacher)
+        //{
+        //    if (updatedTeacher == null)
+        //    {
+        //        Console.WriteLine("UpdateTeacherAsync: updatedTeacher is null");
+        //        return false;
+        //    }
 
-        public async Task<Users?> GetStudentByIdAsync(int id)
-        {
-            var users = await GetUsersAsync(); // existing method
-            return users.FirstOrDefault(u => u.User_ID == id && u.Role == "Student");
-        }
+        //    try
+        //    {
+        //        Console.WriteLine($"Updating teacher ID: {updatedTeacher.id}");
+
+        //        // Serialize with default options (uses JsonPropertyName attributes)
+        //        var jsonOptions = new JsonSerializerOptions
+        //        {
+        //            PropertyNamingPolicy = null, // preserve the JsonPropertyName
+        //            DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull
+        //        };
+
+        //        string payload = JsonSerializer.Serialize(updatedTeacher, jsonOptions);
+        //        Console.WriteLine($"Payload being sent:\n{payload}");
+
+        //        // Send PUT request to MockAPI
+        //        var content = new StringContent(payload, Encoding.UTF8, "application/json");
+        //        var response = await _http.PutAsync($"Users/{updatedTeacher.id}", content);
+
+        //        Console.WriteLine($"Response status: {response.StatusCode}");
+
+        //        if (!response.IsSuccessStatusCode)
+        //        {
+        //            var errorContent = await response.Content.ReadAsStringAsync();
+        //            Console.WriteLine($"Error response: {errorContent}");
+        //        }
+
+        //        return response.IsSuccessStatusCode;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Console.WriteLine($"UpdateTeacherAsync failed: {ex.Message}");
+        //        Console.WriteLine($"StackTrace: {ex.StackTrace}");
+        //        return false;
+        //    }
+        //}
 
         //public async Task<Users?> DeleteTeacher(Users teacher)
         //{
