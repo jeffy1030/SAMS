@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SAMS.Models;
 using SAMS.Services;
+using System.Threading.Tasks;
 
 namespace SAMS.Controllers
 {
@@ -13,10 +14,10 @@ namespace SAMS.Controllers
             _mockApiService = mockApiService;
         }
 
-        public IActionResult StudentPage()
+        public async Task<IActionResult> StudentPage()
         {
-
-            return View();
+            var students = await _mockApiService.GetStudentAsync();
+            return View(students);
         }
 
         [HttpGet]
@@ -47,6 +48,37 @@ namespace SAMS.Controllers
             }
 
             return RedirectToAction("StudentPage", "Student"); // or wherever you list teachers
+        }
+
+        public async Task<IActionResult> EditTeacher(int id)
+        {
+            ModelState.Remove("id");
+            ModelState.Remove("User_ID");
+            ModelState.Remove("Role");
+            ModelState.Remove("Pass");
+            ModelState.Remove("IsActive");
+
+            // Use MockApiService to fetch the teacher
+            var student = await _mockApiService.GetStudentByIdAsync(id);
+
+            if (student == null)
+            {
+                return NotFound(); // Or redirect to a list page with error
+            }
+
+            // Map teacher to ViewModel if needed
+            var model = new Users
+            {
+                User_ID = student.User_ID,
+                FName = student.FName,
+                LName = student.LName,
+                MName = student.MName,
+                Email = student.Email,
+                Gender = student.Gender
+                // Add any other fields needed for editing
+            };
+
+            return View(model);
         }
     }
 }

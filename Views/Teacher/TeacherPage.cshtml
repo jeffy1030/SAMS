@@ -10,6 +10,91 @@
     //GITHUB will be our medium in creating this project
 }
 
-<div>
-    <a asp-action="AddTeacher" asp-controller="Teacher">Add Teacher</a>
+@model List<SAMS.Models.Users>
+
+<div style="background-color: #1a4d5c; min-height: 100vh; padding: 40px;">
+    <!-- Header -->
+    <div style="background-color: #f4e04d; padding: 30px; border-radius: 8px 8px 0 0; display: flex; justify-content: space-between; align-items: center;">
+        <div style="display: flex; align-items: center; gap: 15px;">
+            <a asp-controller="Home" asp-action="HomePage" class="btn btn-link p-0">
+                <i class="bi bi-arrow-left" style="font-size: 24px;"></i>
+            </a>
+            <h1 style="margin: 0; font-size: 28px; font-weight: bold; color: #5a5a5a;">TEACHERS</h1>
+        </div>
+        <a asp-controller="Teacher" asp-action="AddTeacher" class="btn btn-primary">
+            <i class="bi bi-person-plus"></i> Add Teacher
+        </a>
+    </div>
+
+    <!-- Table Header Only -->
+    <table style="width:100%; border-collapse:collapse; font-family:Arial, sans-serif;">
+
+        <thead>
+            <tr style="background-color:#2d5a6b; color:white; height:50px;">
+                <th style="padding:15px; text-align:left; font-size:18px;">Full Name</th>
+                <th style="padding:15px; text-align:left; font-size:14px;">ID Number</th>
+                <th style="padding:15px; text-align:center; font-size:14px;">Status</th>
+                <th style="padding:15px; text-align:center; font-size:14px;">Actions</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                @foreach (var user in Model)
+                {
+                    var fullName = $"{user.LName}, {user.FName} {(string.IsNullOrWhiteSpace(user.MName) ? "-" : user.MName.Substring(0, 1))}.";
+                    var idNum = user.User_ID.ToString();
+                    var idDisp = $"{idNum.Substring(0, 2)}-{idNum.Substring(2, 4)}";
+
+                    <tr style="background-color:#f5f7f8; border-bottom:1px solid #ddd;">
+                        <td style="padding:15px; text-align:left;">@fullName</td>
+                        <td style="padding:15px; text-align:left;"><b>@idDisp</b></td>
+
+                        <td style="padding:15px; text-align:center;">
+                            @if (user.IsActive)
+                            {
+                                <span style="color:#2e7d32; font-weight:bold;">Active</span>
+                            }
+                            else
+                            {
+                                <span style="color:#c62828; font-weight:bold;">Inactive</span>
+                            }
+                        </td>
+
+                        <td style="padding:15px; text-align:center;">
+                            <!-- Edit Button -->
+                            <a asp-controller="Teacher" asp-action="EditTeacher" asp-route-id="@user.id"
+                               class="btn btn-sm btn-outline-primary me-2">
+                                <i class="bi bi-pencil"></i> Edit
+                            </a>
+
+                            <!-- Delete Button -->
+                            <a asp-controller="Teacher" asp-action="Delete" asp-route-id="@user.id"
+                               class="btn btn-sm btn-outline-danger"
+                               onclick="return confirm('Are you sure you want to delete this teacher?');">
+                                <i class="bi bi-trash"></i> Delete
+                            </a>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="4" style="text-align:center; padding:15px; color:#777;">
+                        No data available
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
 </div>
+
+<style>
+    body, html {
+        height: 100%;
+        margin: 0;
+        background-color: #0b2a3d; /* Blue background */
+    }
+</style>

@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SAMS.Models;
+using SAMS.ViewModels;
 using System.Text;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace SAMS.Services
 {
@@ -31,6 +33,22 @@ namespace SAMS.Services
         {
             var response = await _http.GetStringAsync("Attendance");
             return JsonSerializer.Deserialize<List<Attendance>>(response);
+        }
+
+        public async Task<List<Users>> GetTeachersAsync()
+        {
+            var users = await GetUsersAsync();
+            return users
+                .Where(u => u.Role == "Teacher")
+                .ToList();
+        }
+
+        public async Task<List<Users>> GetStudentAsync()
+        {
+            var users = await GetUsersAsync();
+            return users
+                .Where(u => u.Role == "Student")
+                .ToList();
         }
 
         public async Task<Users?> LoginAsync(int userId, string password)
@@ -111,6 +129,63 @@ namespace SAMS.Services
             }
 
             return null;
+        }
+
+        public async Task<Users?> GetTeacherByIdAsync(string id)
+        {
+            var users = await GetUsersAsync(); // existing method
+            return users.FirstOrDefault(u => u.id == id && u.Role == "Teacher");
+        }
+
+        public async Task<bool> UpdateTeacherAsync(Users updatedTeacher)
+        {
+            if (updatedTeacher == null)
+            {
+                Console.WriteLine("UpdateTeacherAsync: updatedTeacher is null");
+                return false;
+            }
+
+            try
+            {
+                Console.WriteLine($"Updating teacher ID: {updatedTeacher.id}");
+
+                // Serialize with default options (uses JsonPropertyName attributes)
+                var jsonOptions = new JsonSerializerOptions
+                {
+                    PropertyNamingPolicy = null, // preserve the JsonPropertyName
+                    DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull
+                };
+
+                string payload = JsonSerializer.Serialize(updatedTeacher, jsonOptions);
+                Console.WriteLine($"Payload being sent:\n{payload}");
+
+                // Send PUT request to MockAPI
+                var content = new StringContent(payload, Encoding.UTF8, "application/json");
+                var response = await _http.PutAsync($"Users/{updatedTeacher.id}", content);
+
+                Console.WriteLine($"Response status: {response.StatusCode}");
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    var errorContent = await response.Content.ReadAsStringAsync();
+                    Console.WriteLine($"Error response: {errorContent}");
+                }
+
+                return response.IsSuccessStatusCode;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"UpdateTeacherAsync failed: {ex.Message}");
+                Console.WriteLine($"StackTrace: {ex.StackTrace}");
+                return false;
+            }
+        }
+
+
+        public async Task<Users?> GetStudentByIdAsync(int id)
+        {
+            var users = await GetUsersAsync(); // existing method
+            return users.FirstOrDefault(u => u.User_ID == id && u.Role == "Student");
         }
 
         //public async Task<Users?> DeleteTeacher(Users teacher)
