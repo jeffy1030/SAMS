@@ -1,31 +1,77 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
     ViewData["Title"] = "Add Teacher";
 }
 
 @model SAMS.Models.Users
 
-<form asp-controller="Teacher" asp-action="AddTeacher" method="post">
+<div style="background-color:#1a4d5c; min-height:100vh; padding:40px; display:flex; justify-content:center; align-items:center;">
 
-    <input asp-for="User_ID" type="hidden" disabled>
-    <input asp-for="id" type="hidden" disabled>
-    <input asp-for="Role" type="hidden" disabled>
-    <input asp-for="Pass" type="hidden" disabled>
-    <input asp-for="IsActive" type="hidden" disabled>
+    <div style="width:100%; max-width:650px; background-color:#f5f7f8; border-radius:10px; overflow:hidden;">
 
-    <input asp-for="FName" type="text" placeholder="First Name">
-    <input asp-for="MName" type="text" placeholder="Middle Name">
-    <input asp-for="LName" type="text" placeholder="Last Name">
-    <input asp-for="Gender" type="text" placeholder="Gender">
-    <input asp-for="Email" type="text" placeholder="Email">
+        <!-- Header -->
+        <div style="background-color:#f4e04d; padding:30px;">
+            <h1 style="margin:0; font-size:26px; font-weight:bold; color:#5a5a5a;">
+                ADD TEACHER
+            </h1>
+            <p style="margin-top:6px; font-size:14px; color:#6b6b6b;">
+                Teacher Information Form
+            </p>
+        </div>
 
-    <button type="submit">Submit</button>
+        <!-- Form -->
+        <form asp-controller="Teacher" asp-action="AddTeacher" method="post" style="padding:30px;">
 
-</form>
+            <!-- Hidden Fields -->
+            <input asp-for="User_ID" type="hidden" />
+            <input asp-for="id" type="hidden" />
+            <input asp-for="Role" type="hidden" />
+            <input asp-for="Pass" type="hidden" />
+            <input asp-for="IsActive" type="hidden" />
 
-<!-- Validation Modal -->
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
+
+                <div>
+                    <label class="field-label">First Name</label>
+                    <input asp-for="FName" class="field-input" placeholder="First Name" />
+                </div>
+
+                <div>
+                    <label class="field-label">Middle Name</label>
+                    <input asp-for="MName" class="field-input" placeholder="Middle Name" />
+                </div>
+
+                <div>
+                    <label class="field-label">Last Name</label>
+                    <input asp-for="LName" class="field-input" placeholder="Last Name" />
+                </div>
+
+                <div>
+                    <label class="field-label">Gender</label>
+                    <input asp-for="Gender" class="field-input" placeholder="Gender" />
+                </div>
+
+            </div>
+
+            <div style="margin-top:20px;">
+                <label class="field-label">Email</label>
+                <input asp-for="Email" class="field-input" placeholder="Email Address" />
+            </div>
+
+            <div style="margin-top:35px; display:flex; justify-content:flex-end; gap:15px;">
+                <a asp-action="TeacherPage" asp-controller="Teacher" class="btn-cancel">
+                    Cancel
+                </a>
+
+                <button type="submit" class="btn-primary">
+                    Save Teacher
+                </button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+<!-- VALIDATION MODAL -->
 <div class="modal fade" id="validationModal" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -37,7 +83,9 @@
                 <p>Please fill in <strong>all required fields</strong> before submitting.</p>
             </div>
             <div class="modal-footer">
-                <a asp-action="TeacherPage" asp-controller="Teacher" class="btn btn-success px-4 fw-semibold" data-bs-dismiss="modal">
+                <a asp-action="TeacherPage" asp-controller="Teacher"
+                   class="btn btn-success px-4 fw-semibold"
+                   data-bs-dismiss="modal">
                     OK
                 </a>
             </div>
@@ -45,20 +93,27 @@
     </div>
 </div>
 
+<!-- SUCCESS MODAL -->
 <div class="modal fade" id="successModal" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content text-center">
             <div class="modal-body py-4">
 
                 <div class="mb-3">
-                    <i class="bi bi-check-circle-fill text-success" style="font-size: 3rem;"></i>
+                    <i class="bi bi-check-circle-fill text-success" style="font-size:3rem;"></i>
                 </div>
 
                 <h4 class="text-success fw-bold">Success</h4>
                 <p class="mt-2">
                     The record has been successfully created.
                 </p>
-                <a asp-action="TeacherPage" asp-controller="Teacher" class="btn btn-success px-4 fw-semibold" data-bs-dismiss="modal">
+                <p class="text-muted" style="font-size:13px;">
+                    Redirecting to teacher list…
+                </p>
+
+                <a asp-action="TeacherPage" asp-controller="Teacher"
+                   class="btn btn-success px-4 fw-semibold"
+                   data-bs-dismiss="modal">
                     OK
                 </a>
             </div>
@@ -70,8 +125,7 @@
 {
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            var modal = new bootstrap.Modal(document.getElementById('validationModal'));
-            modal.show();
+            new bootstrap.Modal(document.getElementById('validationModal')).show();
         });
     </script>
 }
@@ -80,8 +134,72 @@
 {
     <script>
         document.addEventListener("DOMContentLoaded", function () {
+
             var modal = new bootstrap.Modal(document.getElementById('successModal'));
             modal.show();
+
+            // AUTO REDIRECT AFTER SUCCESS
+            setTimeout(function () {
+                window.location.href = '@Url.Action("TeacherPage", "Teacher")';
+            }, 2000);
+
         });
     </script>
 }
+
+<style>
+    body, html {
+        margin: 0;
+        height: 100%;
+        background-color: #0b2a3d;
+        font-family: Arial, sans-serif;
+    }
+
+    .field-label {
+        font-size: 13px;
+        font-weight: 600;
+        color: #2d5a6b;
+        margin-bottom: 6px;
+        display: block;
+    }
+
+    .field-input {
+        width: 100%;
+        padding: 10px 12px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+    }
+
+        .field-input:focus {
+            outline: none;
+            border-color: #2d5a6b;
+        }
+
+    .btn-primary {
+        background-color: #2d5a6b;
+        color: white;
+        border: none;
+        padding: 10px 22px;
+        border-radius: 6px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+        .btn-primary:hover {
+            background-color: #244b5a;
+        }
+
+    .btn-cancel {
+        background-color: #d0d7db;
+        color: #37474f;
+        padding: 10px 22px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+        .btn-cancel:hover {
+            background-color: #c2cbd0;
+        }
+</style>
