@@ -6,24 +6,31 @@
 
 <div class="page-wrapper">
 
-    <div class="form-card">
+    <div class="outer-card">
 
         <!-- Header -->
         <div class="form-header">
-            <h1>Add Student</h1>
-            <p>Enter student information below</p>
+            <div class="header-content">
+                <button type="button" class="back-btn" onclick="window.location.href='@Url.Action("StudentPage", "Student")'" title="Go back">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12 19 5 12 12 5"></polyline>
+                    </svg>
+                </button>
+                <h1>ADD NEW STUDENT</h1>
+            </div>
         </div>
 
-        <!-- Form -->
-        <form asp-controller="Student" asp-action="AddStudent" method="post" class="form-body">
+        <!-- Inner Beige Card -->
+        <div class="inner-card">
 
-            <input asp-for="User_ID" type="hidden" />
-            <input asp-for="id" type="hidden" />
-            <input asp-for="Role" type="hidden" />
-            <input asp-for="Pass" type="hidden" />
-            <input asp-for="IsActive" type="hidden" />
+            <form asp-controller="Student" asp-action="AddStudent" method="post" class="form-body">
 
-            <div class="form-grid">
+                <input asp-for="User_ID" type="hidden" />
+                <input asp-for="id" type="hidden" />
+                <input asp-for="Role" type="hidden" />
+                <input asp-for="Pass" type="hidden" />
+                <input asp-for="IsActive" type="hidden" />
 
                 <div class="form-group">
                     <label>First Name</label>
@@ -42,176 +49,234 @@
 
                 <div class="form-group">
                     <label>Gender</label>
-                    <input asp-for="Gender" placeholder="Enter gender" />
+                    <select asp-for="Gender" class="form-select">
+                        <option value="">Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Others">Others</option>
+                    </select>
                 </div>
 
-            </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input asp-for="Email" placeholder="Enter email address" />
+                </div>
 
-            <div class="form-group email-group">
-                <label>Email Address</label>
-                <input asp-for="Email" placeholder="Enter email address" />
-            </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary">ADD STUDENT</button>
+                </div>
 
-            <div class="form-actions">
-                <a asp-action="StudentPage" class="btn-secondary">Cancel</a>
-                <button type="submit" class="btn-primary">Save Student</button>
-            </div>
+            </form>
 
-        </form>
+        </div>
     </div>
 </div>
 
 <style>
-
-   
-
     body, html {
         margin: 0;
         height: 100%;
         font-family: "Segoe UI", Arial, sans-serif;
-        background: #0f3d4f; /* deep teal background */
+        background: #0D334C; /* softer navy background */
     }
 
-    /* Page wrapper */
-    .page-wrapper {
-        min-height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 80px 30px;
-    }
-
-    /* Card */
-    .form-card {
+    /* Outer card wrapper - WIDER ONLY */
+    .outer-card {
         width: 100%;
-        max-width: 980px;
-        background: #fdf6e3; /* soft off-white */
-        border-radius: 18px;
-        box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
-        overflow: hidden;
+        max-width: 1200px;
+        margin: 50px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    /* Header */
+    /* Header - adjusted for left alignment */
     .form-header {
-        background: #facc15; /* bright yellow */
-        padding: 45px 55px;
-        color: #1e293b; /* dark text */
+        width: 100%;
+        background: #FFEA4D; /* softer yellow */
+        padding: 35px 40px;
+        border-radius: 12px 12px 0 0;
+        color: #285B3A;
+        box-sizing: border-box;
     }
 
-        .form-header h1 {
-            margin: 0;
-            font-size: 30px;
-            font-weight: 700;
-            letter-spacing: 0.5px;
+    .header-content {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+    }
+
+    .back-btn {
+        background: transparent;
+        border: none;
+        color: #0D334C;
+        cursor: pointer;
+        padding: 6px;
+        border-radius: 6px;
+        transition: all 0.2s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1;
+    }
+
+        .back-btn:hover {
+            background: rgba(13, 51, 76, 0.1);
+            color: #0D334C;
         }
 
-        .form-header p {
-            margin-top: 8px;
-            font-size: 15px;
-            opacity: 0.9;
+        .back-btn svg {
+            display: block;
+            width: 20px;
+            height: 20px;
         }
 
-    /* Form body */
-    .form-body {
-        padding: 55px;
-        background-color: #fdf6e3; /* soft off-white */
+    .form-header h1 {
+        margin: 0;
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        color: #285B3A;
     }
 
-    /* Grid */
-    .form-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 30px 45px;
+    /* Inner beige card - wider */
+    .inner-card {
+        width: 100%;
+        background: #F9F7EE; /* beige card */
+        padding: 40px 45px;
+        border-radius: 0 0 12px 12px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
     }
 
-    /* Fields */
+    /* Form groups vertical */
     .form-group {
         display: flex;
         flex-direction: column;
+        margin-bottom: 20px;
     }
 
         .form-group label {
-            font-size: 14px;
+            font-size: 16px;
             font-weight: 600;
-            color: #1e293b;
-            margin-bottom: 8px;
+            color: #285B3A;
+            margin-bottom: 6px;
         }
 
-        .form-group input {
+        .form-group input,
+        .form-group select {
             width: 100%;
-            padding: 14px 16px;
+            padding: 14px 18px;
             border-radius: 10px;
-            border: 1px solid #cbd5e1;
-            font-size: 15px;
+            border: 1px solid #d1d5db;
+            font-size: 16px;
             background: #ffffff;
+            box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
             transition: all 0.2s ease;
+            box-sizing: border-box;
         }
 
-            .form-group input:focus {
+        .form-group select {
+            cursor: pointer;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23285B3A' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
+            background-repeat: no-repeat;
+            background-position: right 18px center;
+            background-size: 16px;
+            padding-right: 50px;
+        }
+
+            .form-group input:focus,
+            .form-group select:focus {
                 outline: none;
-                border-color: #0f3d4f; /* dark teal focus */
-                box-shadow: 0 0 0 3px rgba(15, 61, 79, 0.2);
+                border-color: #50A868;
+                box-shadow: 0 0 0 3px rgba(80,168,104,0.2);
             }
 
-    /* Email spacing */
-    .email-group {
-        margin-top: 35px;
-    }
-
-    /* Buttons */
+    /* Single button full width */
     .form-actions {
-        margin-top: 50px;
+        margin-top: 30px;
         display: flex;
-        justify-content: flex-end;
-        gap: 18px;
+        justify-content: center;
     }
 
     .btn-primary {
-        background: #0f3d4f; /* dark teal button */
+        background: #50A868;
         color: white;
         border: none;
-        padding: 14px 30px;
+        padding: 16px 50px;
         border-radius: 10px;
-        font-weight: 600;
-        font-size: 15px;
+        font-weight: 700;
+        font-size: 17px;
         cursor: pointer;
+        width: 100%;
+        max-width: 350px;
         transition: all 0.2s ease;
     }
 
         .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(15, 61, 79, 0.35);
-        }
-
-    .btn-secondary {
-        background-color: #e5e7eb; /* light gray button */
-        color: #1e293b;
-        padding: 14px 30px;
-        border-radius: 10px;
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 15px;
-        transition: all 0.2s ease;
-    }
-
-        .btn-secondary:hover {
-            background-color: #d1d5db;
+            box-shadow: 0 8px 20px rgba(80,168,104,0.35);
         }
 
     /* Responsive */
     @@media (max-width: 768px) {
-        .form-grid
+        .outer-card {
+            margin: 20px;
+            max-width: 100%;
+        }
 
-    {
-        grid-template-columns: 1fr;
+        .form-header, .inner-card {
+            padding: 25px 20px;
+        }
+
+        .header-content {
+            gap: 12px;
+        }
+
+        .form-header h1 {
+            font-size: 24px;
+        }
+
+        .btn-primary {
+            max-width: 100%;
+        }
+
+        .form-group select {
+            background-position: right 15px center;
+            padding-right: 45px;
+        }
+
+        .back-btn {
+            padding: 4px;
+        }
+
+            .back-btn svg {
+                width: 18px;
+                height: 18px;
+            }
     }
 
-    .form-body {
-        padding: 35px;
-    }
+    /* For very small screens */
+    @@media (max-width: 480px) {
+        .header-content {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            text-align: left;
+        }
 
+        .form-header h1 {
+            font-size: 22px;
+            width: 100%;
+        }
+
+        .back-btn {
+            padding: 4px;
+        }
     }
 </style>
-
-
-

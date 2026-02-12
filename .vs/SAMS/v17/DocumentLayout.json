@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|c:\\users\\act-student\\documents\\github\\sams\\views\\student\\studentpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|solutionrelative:views\\student\\studentpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|c:\\users\\act-student\\documents\\github\\sams\\views\\student\\editstudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|solutionrelative:views\\student\\editstudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|c:\\users\\act-student\\documents\\github\\sams\\views\\student\\addstudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|solutionrelative:views\\student\\addstudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -11,16 +19,8 @@
       "RelativeMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|solutionrelative:views\\teacher\\addteacher.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|c:\\users\\act-student\\documents\\github\\sams\\services\\mockapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|solutionrelative:services\\mockapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|c:\\users\\act-student\\documents\\github\\sams\\views\\student\\deletestudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|solutionrelative:views\\student\\deletestudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|c:\\users\\act-student\\documents\\github\\sams\\views\\student\\studentpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|solutionrelative:views\\student\\studentpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|c:\\users\\act-student\\documents\\github\\sams\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -45,6 +45,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|c:\\users\\act-student\\documents\\github\\sams\\controllers\\attendancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|solutionrelative:controllers\\attendancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|c:\\users\\act-student\\documents\\github\\sams\\services\\mockapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|solutionrelative:services\\mockapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|c:\\users\\act-student\\documents\\github\\sams\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -99,10 +103,6 @@
       "RelativeMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|solutionrelative:views\\teacher\\teacherpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|c:\\users\\act-student\\documents\\github\\sams\\views\\student\\editstudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|solutionrelative:views\\student\\editstudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|c:\\users\\act-student\\documents\\github\\sams\\views\\teacher\\editteacher.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DCB8FFC0-D387-43A7-B510-3C79D3204208}|SAMS.csproj|solutionrelative:views\\teacher\\editteacher.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -154,72 +154,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AttendanceController.cs",
-              "DocumentMoniker": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Controllers\\AttendanceController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AttendanceController.cs",
-              "ToolTip": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Controllers\\AttendanceController.cs",
-              "RelativeToolTip": "Controllers\\AttendanceController.cs",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAgwGgAAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T16:25:22.9Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MockApiService.cs",
-              "DocumentMoniker": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Services\\MockApiService.cs",
-              "RelativeDocumentMoniker": "Services\\MockApiService.cs",
-              "ToolTip": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Services\\MockApiService.cs",
-              "RelativeToolTip": "Services\\MockApiService.cs",
-              "ViewState": "AgIAAPwAAAAAAAAAAAAAAAUBAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-01T12:40:42.001Z",
+              "DocumentIndex": 4,
+              "Title": "DeleteStudent.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Views\\Student\\DeleteStudent.cshtml",
+              "RelativeDocumentMoniker": "Views\\Student\\DeleteStudent.cshtml",
+              "ToolTip": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Views\\Student\\DeleteStudent.cshtml",
+              "RelativeToolTip": "Views\\Student\\DeleteStudent.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-08T08:13:20.784Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Attendance.cs",
-              "DocumentMoniker": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Models\\Attendance.cs",
-              "RelativeDocumentMoniker": "Models\\Attendance.cs",
-              "ToolTip": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Models\\Attendance.cs",
-              "RelativeToolTip": "Models\\Attendance.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T16:15:37.708Z"
+              "DocumentIndex": 2,
+              "Title": "AddStudent.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Views\\Student\\AddStudent.cshtml",
+              "RelativeDocumentMoniker": "Views\\Student\\AddStudent.cshtml",
+              "ToolTip": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Views\\Student\\AddStudent.cshtml",
+              "RelativeToolTip": "Views\\Student\\AddStudent.cshtml",
+              "ViewState": "AgIAAPQAAAAAAAAAAAAkwBkBAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-28T16:28:10.332Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AttendanceRecord.cs",
-              "DocumentMoniker": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Models\\AttendanceRecord.cs",
-              "RelativeDocumentMoniker": "Models\\AttendanceRecord.cs",
-              "ToolTip": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Models\\AttendanceRecord.cs",
-              "RelativeToolTip": "Models\\AttendanceRecord.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T16:15:48.096Z"
+              "DocumentIndex": 0,
+              "Title": "StudentPage.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Views\\Student\\StudentPage.cshtml",
+              "RelativeDocumentMoniker": "Views\\Student\\StudentPage.cshtml",
+              "ToolTip": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Views\\Student\\StudentPage.cshtml*",
+              "RelativeToolTip": "Views\\Student\\StudentPage.cshtml*",
+              "ViewState": "AgIAAA0BAAAAAAAAAAAkwDIBAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-28T16:27:56.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddTeacher.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Views\\Teacher\\AddTeacher.cshtml",
+              "RelativeDocumentMoniker": "Views\\Teacher\\AddTeacher.cshtml",
+              "ToolTip": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Views\\Teacher\\AddTeacher.cshtml",
+              "RelativeToolTip": "Views\\Teacher\\AddTeacher.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAM0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-28T16:28:34.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EditStudent.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Views\\Student\\EditStudent.cshtml",
+              "RelativeDocumentMoniker": "Views\\Student\\EditStudent.cshtml",
+              "ToolTip": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Views\\Student\\EditStudent.cshtml",
+              "RelativeToolTip": "Views\\Student\\EditStudent.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-08T05:07:23.358Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "CreateAttendanceVM.cs",
-              "DocumentMoniker": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\ViewModels\\CreateAttendanceVM.cs",
-              "RelativeDocumentMoniker": "ViewModels\\CreateAttendanceVM.cs",
-              "ToolTip": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\ViewModels\\CreateAttendanceVM.cs",
-              "RelativeToolTip": "ViewModels\\CreateAttendanceVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-08T13:02:43.712Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
               "Title": "Users.cs",
               "DocumentMoniker": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Models\\Users.cs",
               "RelativeDocumentMoniker": "Models\\Users.cs",
@@ -228,68 +232,6 @@
               "ViewState": "AgIAAAoAAAAAAAAAAAA1wCMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-28T16:12:27.389Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AddTeacher.cshtml",
-              "DocumentMoniker": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Views\\Teacher\\AddTeacher.cshtml",
-              "RelativeDocumentMoniker": "Views\\Teacher\\AddTeacher.cshtml",
-              "ToolTip": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Views\\Teacher\\AddTeacher.cshtml",
-              "RelativeToolTip": "Views\\Teacher\\AddTeacher.cshtml",
-              "ViewState": "AgIAAKQAAAAAAAAAAAAuwMAAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-28T16:28:34.944Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AddAttendance.cshtml",
-              "DocumentMoniker": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Views\\Attendance\\AddAttendance.cshtml",
-              "RelativeDocumentMoniker": "Views\\Attendance\\AddAttendance.cshtml",
-              "ToolTip": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Views\\Attendance\\AddAttendance.cshtml",
-              "RelativeToolTip": "Views\\Attendance\\AddAttendance.cshtml",
-              "ViewState": "AgIAACQAAAAAAAAAAAAcwEsAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-28T16:28:48.993Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AddStudent.cshtml",
-              "DocumentMoniker": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Views\\Student\\AddStudent.cshtml",
-              "RelativeDocumentMoniker": "Views\\Student\\AddStudent.cshtml",
-              "ToolTip": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Views\\Student\\AddStudent.cshtml*",
-              "RelativeToolTip": "Views\\Student\\AddStudent.cshtml*",
-              "ViewState": "AgIAAL0AAAAAAAAAAAAAAMsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-28T16:28:10.332Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAwwCkAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T16:22:48.913Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "StudentAttendanceItemVM.cs",
-              "DocumentMoniker": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\ViewModels\\StudentAttendanceItemVM.cs",
-              "RelativeDocumentMoniker": "ViewModels\\StudentAttendanceItemVM.cs",
-              "ToolTip": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\ViewModels\\StudentAttendanceItemVM.cs",
-              "RelativeToolTip": "ViewModels\\StudentAttendanceItemVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-08T13:02:27.475Z"
             },
             {
               "$type": "Document",
@@ -305,6 +247,102 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CreateAttendanceVM.cs",
+              "DocumentMoniker": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\ViewModels\\CreateAttendanceVM.cs",
+              "RelativeDocumentMoniker": "ViewModels\\CreateAttendanceVM.cs",
+              "ToolTip": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\ViewModels\\CreateAttendanceVM.cs",
+              "RelativeToolTip": "ViewModels\\CreateAttendanceVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T13:02:43.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AttendanceRecord.cs",
+              "DocumentMoniker": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Models\\AttendanceRecord.cs",
+              "RelativeDocumentMoniker": "Models\\AttendanceRecord.cs",
+              "ToolTip": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Models\\AttendanceRecord.cs",
+              "RelativeToolTip": "Models\\AttendanceRecord.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T16:15:48.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Attendance.cs",
+              "DocumentMoniker": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Models\\Attendance.cs",
+              "RelativeDocumentMoniker": "Models\\Attendance.cs",
+              "ToolTip": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Models\\Attendance.cs",
+              "RelativeToolTip": "Models\\Attendance.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T16:15:37.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MockApiService.cs",
+              "DocumentMoniker": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Services\\MockApiService.cs",
+              "RelativeDocumentMoniker": "Services\\MockApiService.cs",
+              "ToolTip": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Services\\MockApiService.cs",
+              "RelativeToolTip": "Services\\MockApiService.cs",
+              "ViewState": "AgIAAPwAAAAAAAAAAAAAABABAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T12:40:42.001Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AttendanceController.cs",
+              "DocumentMoniker": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Controllers\\AttendanceController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AttendanceController.cs",
+              "ToolTip": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Controllers\\AttendanceController.cs",
+              "RelativeToolTip": "Controllers\\AttendanceController.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAgwGgAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T16:25:22.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAwwCkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T16:22:48.913Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AddAttendance.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Views\\Attendance\\AddAttendance.cshtml",
+              "RelativeDocumentMoniker": "Views\\Attendance\\AddAttendance.cshtml",
+              "ToolTip": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Views\\Attendance\\AddAttendance.cshtml",
+              "RelativeToolTip": "Views\\Attendance\\AddAttendance.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAcwEsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-28T16:28:48.993Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "StudentAttendanceItemVM.cs",
+              "DocumentMoniker": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\ViewModels\\StudentAttendanceItemVM.cs",
+              "RelativeDocumentMoniker": "ViewModels\\StudentAttendanceItemVM.cs",
+              "ToolTip": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\ViewModels\\StudentAttendanceItemVM.cs",
+              "RelativeToolTip": "ViewModels\\StudentAttendanceItemVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T13:02:27.475Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 8,
               "Title": "EditAttendance.cshtml",
               "DocumentMoniker": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Views\\Attendance\\EditAttendance.cshtml",
@@ -317,7 +355,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "AttendanceDetailVM.cs",
               "DocumentMoniker": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\ViewModels\\AttendanceDetailVM.cs",
               "RelativeDocumentMoniker": "ViewModels\\AttendanceDetailVM.cs",
@@ -329,7 +367,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "UserViewModel.cs",
               "DocumentMoniker": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\ViewModels\\UserViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\UserViewModel.cs",
@@ -341,7 +379,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "LoginViewModel.cs",
               "DocumentMoniker": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\ViewModels\\LoginViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\LoginViewModel.cs",
@@ -353,7 +391,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
@@ -365,7 +403,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "TeacherController.cs",
               "DocumentMoniker": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Controllers\\TeacherController.cs",
               "RelativeDocumentMoniker": "Controllers\\TeacherController.cs",
@@ -389,7 +427,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "UnixDateTimeConverter.cs",
               "DocumentMoniker": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Services\\UnixDateTimeConverter.cs",
               "RelativeDocumentMoniker": "Services\\UnixDateTimeConverter.cs",
@@ -401,7 +439,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "ReportsController.cs",
               "DocumentMoniker": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Controllers\\ReportsController.cs",
               "RelativeDocumentMoniker": "Controllers\\ReportsController.cs",
@@ -413,7 +451,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "TeacherPage.cshtml",
               "DocumentMoniker": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Views\\Teacher\\TeacherPage.cshtml",
               "RelativeDocumentMoniker": "Views\\Teacher\\TeacherPage.cshtml",
@@ -422,18 +460,6 @@
               "ViewState": "AgIAAEEAAAAAAAAAAAAYwF0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-01-28T16:28:25.069Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "EditStudent.cshtml",
-              "DocumentMoniker": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Views\\Student\\EditStudent.cshtml",
-              "RelativeDocumentMoniker": "Views\\Student\\EditStudent.cshtml",
-              "ToolTip": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Views\\Student\\EditStudent.cshtml",
-              "RelativeToolTip": "Views\\Student\\EditStudent.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-08T05:07:23.358Z"
             },
             {
               "$type": "Document",
@@ -446,30 +472,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-02-08T05:07:08.766Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "StudentPage.cshtml",
-              "DocumentMoniker": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Views\\Student\\StudentPage.cshtml",
-              "RelativeDocumentMoniker": "Views\\Student\\StudentPage.cshtml",
-              "ToolTip": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Views\\Student\\StudentPage.cshtml",
-              "RelativeToolTip": "Views\\Student\\StudentPage.cshtml",
-              "ViewState": "AgIAADUAAAAAAAAAAAAIwF0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-28T16:27:56.989Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DeleteStudent.cshtml",
-              "DocumentMoniker": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Views\\Student\\DeleteStudent.cshtml",
-              "RelativeDocumentMoniker": "Views\\Student\\DeleteStudent.cshtml",
-              "ToolTip": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\Views\\Student\\DeleteStudent.cshtml",
-              "RelativeToolTip": "Views\\Student\\DeleteStudent.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-08T08:13:20.784Z"
             },
             {
               "$type": "Document",
@@ -540,7 +542,7 @@
               "ToolTip": "C:\\Users\\ACT-STUDENT\\Documents\\GitHub\\SAMS\\.gitattributes",
               "RelativeToolTip": ".gitattributes",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF8SURBVDhPjVNLTgJBEG1lwpoFB3GNK9fieA48hD8iwT/ihwgSDAIHgAGXXsEV18CNzL/LquqZdsYM6kteXqcy3fWqpmpNRBgOhyABBEgpAFVKPIMUcYzUyOU\u002BXM/b2qtU3vkSfRjjZTCAMAw1A2LwzdFoBPP5HNqdzuL27n4juibWI\u002BUshBA1DIkhEx9iEorFotgslQqGYbxxAGFEqt1MxmPWJLbLZdZ\u002Bv89q5PMFPiTR6z2zdaxR0fXA0XTBcVywkb4fwHXjRteecIDNQ7UmExVYAdPcxYaqclN46na5WenMKjtlVnTYwcXlVYaDqImW9beD5N/TeGy32QHXm6hZ03ZgiSQHp2fnWQ4oBmJqWSqwAqZpZjt4aLXAD4J0VqyZsmoubfB8H2r1eoaD6NXZ9HcHO\u002BSA3f4AjifXl8rItOETM8ckB9WTWpYD9RdeZ1PWVWAHWXPQaDb59f/w8LiqHeh1pvGkCaP6qB8yXusoxmuNZ7XmII4O9vGuEF86osuDYRkpYQAAAABJRU5ErkJggg==",
               "WhenOpened": "2026-01-28T16:51:49.355Z"
             },
             {
