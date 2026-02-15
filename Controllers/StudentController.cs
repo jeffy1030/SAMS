@@ -43,11 +43,14 @@ namespace SAMS.Controllers
 
             if (createdTeacher == null)
             {
-                ModelState.AddModelError("", "Failed to create student");
-                return View(model);
+                TempData["ShowErrorModal"] = "true";
+            }
+            else
+            {
+                TempData["ShowSuccessModal"] = "true";
             }
 
-            return RedirectToAction("StudentPage", "Student"); // or wherever you list teachers
+            return View(model);
         }
 
         [HttpGet]
