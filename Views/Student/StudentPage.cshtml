@@ -7,88 +7,301 @@
 
 @model List<SAMS.Models.Users>
 
-<div style="background-color: #1a4d5c; min-height: 100vh; padding: 40px;">
-    <!-- Header -->
-    <div style="background-color: #f4e04d; padding: 30px; border-radius: 8px 8px 0 0; display: flex; justify-content: space-between; align-items: center;">
-        <div style="display: flex; align-items: center; gap: 15px;">
-            <a asp-controller="Home" asp-action="HomePage" class="btn btn-link p-0">
-                <i class="bi bi-arrow-left" style="font-size: 24px;"></i>
-            </a>
-            <h1 style="margin: 0; font-size: 28px; font-weight: bold; color: #5a5a5a;">STUDENTS</h1>
+<div class="page-wrapper">
+
+    <div class="outer-card">
+
+        <!-- Header -->
+        <div class="form-header">
+            <div class="header-content">
+                <div class="left-header">
+                    <a asp-controller="Home" asp-action="HomePage" class="back-btn" title="Go back">
+                        <i class="bi bi-arrow-left" style="font-size: 24px;"></i>
+                    </a>
+                    <h1>STUDENTS</h1>
+                </div>
+                <a asp-controller="Student" asp-action="AddStudent" class="btn btn-primary">
+                    <i class="bi bi-person-plus"></i> Add Student
+                </a>
+            </div>
         </div>
-        <a asp-controller="Student" asp-action="AddStudent" class="btn btn-primary">
-            <i class="bi bi-person-plus"></i> Add Student
-        </a>
-    </div>
 
-    <!-- Table Header Only -->
-    <table style="width:100%; border-collapse:collapse; font-family:Arial, sans-serif;">
-
-        <thead>
-            <tr style="background-color:#2d5a6b; color:white; height:50px;">
-                <th style="padding:15px; text-align:left; font-size:18px;">Full Name</th>
-                <th style="padding:15px; text-align:left; font-size:14px;">ID Number</th>
-               @*  <th style="padding:15px; text-align:center; font-size:14px;">Status</th> *@
-                <th style="padding:15px; text-align:center; font-size:14px;">Actions</th>
-            </tr>
-        </thead>
-
-        <tbody>
-            @if (Model != null && Model.Any())
-            {
-                @foreach (var user in Model)
-                {
-                    var fullName = $"{user.LName}, {user.FName} {(string.IsNullOrWhiteSpace(user.MName) ? "-" : user.MName.Substring(0, 1))}.";
-                    var idNum = user.User_ID.ToString();
-                    var idDisp = $"{idNum.Substring(0, 2)}-{idNum.Substring(2, 3)}";
-
-                    <tr style="background-color:#f5f7f8; border-bottom:1px solid #ddd;">
-                        <td style="padding:15px; text-align:left;">@fullName</td>
-                        <td style="padding:15px; text-align:left;"><b>@idDisp</b></td>
-
-                       @*  <td style="padding:15px; text-align:center;">
-                            @if (user.IsActive)
-                            {
-                                <span style="color:#2e7d32; font-weight:bold;">Active</span>
-                            }
-                            else
-                            {
-                                <span style="color:#c62828; font-weight:bold;">Inactive</span>
-                            }
-                        </td> *@
-
-                        <td style="padding:15px; text-align:center;">
-                            <!-- Edit Button -->
-                            <a asp-controller="Student" asp-action="EditStudent" asp-route-id="@user.id"
-                               class="btn btn-sm btn-outline-primary me-2">
-                                <i class="bi bi-pencil"></i> Edit
-                            </a>
-
-                            <!-- Delete Button -->
-                            <a asp-controller="Student" asp-action="DeleteStudent" asp-route-id="@user.id"
-                               class="btn btn-sm btn-outline-danger">
-                                <i class="bi bi-trash"></i> Delete
-                            </a>
-                        </td>
+        <!-- Table Container - NO BEIGE CARD -->
+        <div class="table-container">
+            <table class="students-table">
+                <thead>
+                    <tr>
+                        <th>Full Name</th>
+                        <th>ID Number</th>
+                        <th>Actions</th>
                     </tr>
-                }
-            }
-            else
-            {
-                <tr>
-                    <td colspan="4" style="text-align:center; padding:15px; color:#777;">
-                        No data available
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
+                </thead>
+                <tbody>
+                    @if (Model != null && Model.Any())
+                    {
+                        @foreach (var user in Model)
+                        {
+                            var fullName = $"{user.LName}, {user.FName} {(string.IsNullOrWhiteSpace(user.MName) ? "-" : user.MName.Substring(0, 1))}.";
+                            var idNum = user.User_ID.ToString();
+                            var idDisp = $"{idNum.Substring(0, 2)}-{idNum.Substring(2, 3)}";
+
+                            <tr>
+                                <td>@fullName</td>
+                                <td><b>@idDisp</b></td>
+                                <td class="actions-cell">
+                                    <a asp-controller="Student" asp-action="EditStudent" asp-route-id="@user.id"
+                                       class="btn btn-sm btn-outline-primary me-2">
+                                        <i class="bi bi-pencil"></i> Edit
+                                    </a>
+                                    <a asp-controller="Student" asp-action="DeleteStudent" asp-route-id="@user.id"
+                                       class="btn btn-sm btn-outline-danger">
+                                        <i class="bi bi-trash"></i> Delete
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="3" class="no-data">
+                                No data available
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
 </div>
 
 <style>
     body, html {
-        height: 100%;
         margin: 0;
-        background-color: #0b2a3d; /* Blue background */
+        height: 100%;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: #0D334C;
+    }
+
+    /* Page wrapper */
+    .page-wrapper {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 40px 30px;
+        box-sizing: border-box;
+    }
+
+    /* Outer card - WIDE CONTAINER */
+    .outer-card {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Header - Yellow bar only */
+    .form-header {
+        width: 100%;
+        background: #FFEA4D;
+        padding: 35px 40px;
+        border-radius: 12px 12px 0 0;
+        box-sizing: border-box;
+    }
+
+    .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .left-header {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    /* Back button - original */
+    .back-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #0D334C;
+        text-decoration: none;
+        padding: 0;
+        line-height: 1;
+    }
+
+        .back-btn:hover {
+            color: #0D334C;
+            opacity: 0.8;
+        }
+
+    .form-header h1 {
+        margin: 0;
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        color: #285B3A;
+    }
+
+    /* Add Student button - ORIGINAL DEFAULT BLUE */
+    .btn-primary {
+        background: #0d6efd;
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 6px;
+        font-weight: 500;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        text-decoration: none;
+        transition: all 0.2s ease;
+    }
+
+        .btn-primary:hover {
+            background: #0b5ed7;
+            color: white;
+        }
+
+    /* Table Container - NO BACKGROUND, NO SHADOW, NO PADDING */
+    .table-container {
+        width: 100%;
+        background: transparent;
+        padding: 0;
+        margin-top: 20px;
+        box-sizing: border-box;
+    }
+
+    /* Table styling */
+    .students-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+        .students-table thead tr {
+            background-color: #2d5a6b;
+            color: white;
+            height: 50px;
+        }
+
+        .students-table th {
+            padding: 15px;
+            text-align: left;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+            .students-table th:first-child {
+                border-radius: 8px 0 0 0;
+            }
+
+            .students-table th:last-child {
+                border-radius: 0 8px 0 0;
+                text-align: center;
+            }
+
+        .students-table tbody tr {
+            background-color: #ffffff;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .students-table td {
+            padding: 15px;
+            font-size: 15px;
+            color: #1f2937;
+        }
+
+            .students-table td:last-child {
+                text-align: center;
+            }
+
+    .actions-cell {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .no-data {
+        text-align: center;
+        padding: 40px !important;
+        color: #6b7280;
+        font-size: 16px;
+        background: #ffffff;
+    }
+
+    /* Responsive */
+    @@media (max-width: 768px) {
+        .page-wrapper {
+            padding: 20px;
+        }
+
+        .outer-card {
+            max-width: 100%;
+        }
+
+        .form-header {
+            padding: 25px 20px;
+        }
+
+            .form-header h1 {
+                font-size: 24px;
+            }
+
+        .header-content {
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .left-header {
+            width: 100%;
+        }
+
+        .btn-primary {
+            width: 100%;
+            justify-content: center;
+        }
+
+        .students-table {
+            display: block;
+            overflow-x: auto;
+        }
+
+        .actions-cell {
+            flex-direction: column;
+            gap: 8px;
+        }
+
+            .actions-cell .btn {
+                width: 100%;
+                margin: 0 !important;
+            }
+    }
+
+    /* For very small screens */
+    @@media (max-width: 480px) {
+        .form-header h1 {
+            font-size: 22px;
+        }
+
+        .students-table th {
+            padding: 12px;
+            font-size: 14px;
+        }
+
+        .students-table td {
+            padding: 12px;
+            font-size: 14px;
+        }
     }
 </style>
